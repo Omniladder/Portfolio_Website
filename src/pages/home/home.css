@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.me-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 15%;
+  margin-top: 5%;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.self-picture {
+  pointer-events: none;
+  border-radius: 50%;
+  height: 50vw;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center top;
+  border: 14px solid #208AAE;
+  width: 50vw;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.major-container {
+  color: #FF9B71;
+}
+
+.text-container {
+  white-space: nowrap;
+  margin-top: 5%;
+  margin-left: 5%;
+  text-align: left;
+  line-height: 1.3;
+  justify-content: center;
+}
+
+.name-container {
+  font-family: 'Rubik', sans-serif;
+  font-size: 6vw;
+  font-weight: 600;
+  color: #D8D78F;
+}
+
+.App-header {
+  background-color: #A61C3C;
+  min-height: 100vh;
+  display: flex;
+  /*justify-content: center;*/
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
