@@ -24,6 +24,7 @@
   width: 50vw;
   max-width: 500px;
   max-height: 500px;
+  box-shadow: 10px 10px 20px  rgba(0, 0, 0, 0.5)
 }
 
 .major-container {
@@ -48,7 +49,7 @@
 
 .App-header {
   background-color: #A61C3C;
-  min-height: 100vh;
+  min-height: 1vh;
   display: flex;
   /*justify-content: center;*/
   font-size: calc(10px + 2vmin);

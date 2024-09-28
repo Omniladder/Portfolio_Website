@@ -1,5 +1,5 @@
 import './education.css';
-import WebHeader from '../../components/header.js';
+import WebHeader from '../../components/header/header.js';
 
 function projects() {
 	return (

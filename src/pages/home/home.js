@@ -1,7 +1,7 @@
 import me from '../../pics/dustin.png';
 
 import './home.css';
-import WebHeader from '../../components/header.js';
+import WebHeader from '../../components/header/header.js';
 
 function home() {
 	return (

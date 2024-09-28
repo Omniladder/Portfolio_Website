@@ -1,3 +1,31 @@
 .projects-body{
-    background-color: #1ffc02;
+    background-color: #191b2e;
+    min-height: 80vh;
+}
+
+.BoxShadow{
+    box-shadow: 0 -0px 0 #191b2e;
+    color: #191b2e ;
+}
+
+.card-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the cards horizontally */
+    gap: 80px; /* Optional: adds space between cards */
+    padding: 20px; /* Optional: adds padding around the container */
+    
+  }
+
+.sections{
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.1vw;
+    font-weight: 600;
+    color: #D8D78F;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    justify-content: left;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 40px;
+    
 }

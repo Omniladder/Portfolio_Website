@@ -1,11 +1,11 @@
 import './experience.css';
-import WebHeader from '../../components/header.js';
+import WebHeader from '../../components/header/header.js';
 
 function projects() {
 	return (
 		<div className="App">
 			<header className='header'>
-			<div><WebHeader title={"Experience"} quote={"The purpose of life is not to be happy but to be productive, to be an achiever, and to achieve your own happiness through your own efforts."}/></div>
+				<div><WebHeader title={"Experience"} quote={"Success is to be measured not so much by the position that one has reached in life as by the obstacles which he has overcome"}/></div>
 			</header>
 			<body className="">
 				
