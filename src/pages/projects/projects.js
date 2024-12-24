@@ -8,7 +8,7 @@ import { register } from 'swiper/element/bundle';
 /*import CardContent from '@mui/material/CardContent';*/
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper.css';
+//import 'swiper/swiper.css'; //This line is busted
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -17,6 +17,7 @@ import { EffectCoverflow, Navigation, Pagination } from 'swiper';
 import haskell from '../../pics/haskell.jpeg';
 import celluar from '../../pics/cells.png';
 import wants from '../../pics/clientWants.png';
+import testifAi from '../../pics/TestifAi.png';
 
 /*iimport Swiper from 'swiper';
 import 'swiper/css';
@@ -39,7 +40,7 @@ function projects() {
 					<swiper-slide><LargeCard title = "Lambda Check" quote="A Haskell Vulnerability Detector" image={haskell}></LargeCard></swiper-slide>
 					<swiper-slide><LargeCard title = "Celite" quote="A Cellular Automata Simulator" image={celluar}></LargeCard></swiper-slide>
 					<swiper-slide><LargeCard title = "Saltcast Chatbot" quote="A Salinity Oriented RAG Chatbot" image={wants}> </LargeCard></swiper-slide>
-					<swiper-slide><LargeCard title = "Celite" quote="A Cellular Automata Simulator" image={celluar}></LargeCard></swiper-slide>
+					<swiper-slide><LargeCard title = "Testif.Ai" quote="A LLM Based Test Generator" image={testifAi}></LargeCard></swiper-slide>
 				</swiper-container>
 				
 				<div className="sections">Minor Projects</div>
