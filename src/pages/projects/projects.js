@@ -1,33 +1,37 @@
 import './projects.css';
+
+//These are the internally created components created for this program
 import WebHeader from '../../components/header/header.js';
 import LargeCard from '../../components/largeCard/largeCard.js';
 
+
+
+//Swiper components
 import { register } from 'swiper/element/bundle';
-
-
-/*import CardContent from '@mui/material/CardContent';*/
-
 import { Swiper, SwiperSlide } from 'swiper/react';
-//import 'swiper/swiper.css'; //This line is busted
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { EffectCoverflow, Navigation, Pagination } from 'swiper';
+import { EffectCoverflow, Pagination } from 'swiper/modules';
 
+
+//Swiper CSS
+import 'swiper/css';
+import 'swiper/css/pagination'
+import 'swiper/css/effect-coverflow'
+
+// These are the imports for images used in large project sliders
 import haskell from '../../pics/haskell.jpeg';
 import celluar from '../../pics/cells.png';
 import wants from '../../pics/clientWants.png';
 import testifAi from '../../pics/TestifAi.png';
 
-/*iimport Swiper from 'swiper';
-import 'swiper/css';
-import SwiperCore, { Autoplay, Navigation } from 'swiper';
-mport SwiperCore from 'swiper';*/
+
+
+
 
 function projects() {
 	register();
-	/*SwiperCore.use([Autoplay]);*/
+
 	return (
+		
 		<div className="App">
 			<header>
 				<div><WebHeader title={"Projects"} quote={"The purpose of life is not to be happy but to be productive, to be an achiever, and to achieve your own happiness through your own efforts."}/></div>
@@ -36,12 +40,55 @@ function projects() {
 				<div className='BoxShadow'>_</div>
 				<div className="sections">Major Projects</div>
 				
-				<swiper-container slides-per-view="3" speed="500" loop="true" /*spaceBetween={"30px"}*/ navigation="true" centeredSlides={true}>
-					<swiper-slide><LargeCard title = "Lambda Check" quote="A Haskell Vulnerability Detector" image={haskell}></LargeCard></swiper-slide>
-					<swiper-slide><LargeCard title = "Celite" quote="A Cellular Automata Simulator" image={celluar}></LargeCard></swiper-slide>
-					<swiper-slide><LargeCard title = "Saltcast Chatbot" quote="A Salinity Oriented RAG Chatbot" image={wants}> </LargeCard></swiper-slide>
-					<swiper-slide><LargeCard title = "Testif.Ai" quote="A LLM Based Test Generator" image={testifAi}></LargeCard></swiper-slide>
-				</swiper-container>
+				{/*<swiper slides-per-view={3} speed={500} loop={true} navigation={true} centeredSlides={false}  >*/}
+				<Swiper
+
+					modules={[EffectCoverflow, Pagination]}
+					effect='coverflow'
+					slidesPerView={3}
+
+					loop={true}
+					loopedslides={4} 
+
+					pagination={{clickable: true}}
+					className="cardswiper"
+
+					coverflowEffect=
+						{{
+							rotate: -7,
+							slideShadows: false	
+						}}
+				>
+					{/* Slide 1 Lambda Check*/}
+					<SwiperSlide >{
+						({ isVisible }) => isVisible ? (
+							<LargeCard title = "Lambda Check" quote="A Haskell Vulnerability Detector" image={haskell}></LargeCard>
+						) : null }
+					</SwiperSlide>
+
+					{/* Slide 2 Celite*/}
+					<SwiperSlide>{
+						({ isVisible }) => isVisible ? (
+							<LargeCard title = "Celite" quote="A Cellular Automata Simulator" image={celluar}></LargeCard>
+						) : null }
+					</SwiperSlide>
+
+					{/* Slide 3 Salinity Chatbot*/}
+					<SwiperSlide>{
+						({ isVisible }) => isVisible ? (
+							<LargeCard title = "Saltcast Chatbot" quote="A Salinity Oriented RAG Chatbot" image={wants}> </LargeCard>
+						) : null }
+					</SwiperSlide>
+
+					{/* Slide 4 TestifAi*/}
+					<SwiperSlide>{
+						({ isVisible }) => isVisible ? (
+							<LargeCard title = "Testif.Ai" quote="A LLM Based Test Generator" image={testifAi}></LargeCard>
+						) : null }
+					</SwiperSlide>
+
+
+				</Swiper>
 				
 				<div className="sections">Minor Projects</div>
 			</div>

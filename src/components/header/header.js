@@ -8,13 +8,13 @@ function WebHeader({title, quote}) {
   const navigate = useNavigate();
   return (
     <header className='header'>
-      <div class='header-container'>
-        <div class='title'>{title}</div>
-        <div class='quote'>"{quote}"</div>
+      <div className='header-container'>
+        <div className='title'>{title}</div>
+        <div className='quote'>"{quote}"</div>
       </div>
       <div className='nav-bar'>
       <img src={logo} className="logo" alt="self" onClick = {() => navigate("/")}/>
-        <div class='nav-buttons'>
+        <div className='nav-buttons'>
           <button className='nav-button' onClick = {() => navigate("/")} >Home</button>
           <button className='nav-button' onClick = {() => navigate("/projects")}>Projects</button>
           <button className='nav-button' onClick = {() => navigate("/experience")}>Experience</button>

@@ -7,7 +7,7 @@ import './largeCard.css';
 
 function largeCard({title, quote, image}) {
   return (
-    <Card sx={{ width: '40vh' , height: '45vh', backgroundColor: '#A61C3C', borderRadius: '10%', border: '5px solid black', borderColor: '#FF9B71', transition: 'transform 0.25s ease-in-out', boxShadow: '10px 13px 5px rgba(0, 0, 0, 0.5)', 
+    <Card sx={{ width: '55vh' , height: '60vh', backgroundColor: '#A61C3C', borderRadius: '10%', border: '5px solid black', borderColor: '#FF9B71', transition: 'transform 0.25s ease-in-out', boxShadow: '15px 13px 8px rgba(0, 0, 0, 0.5)', 
       '&:hover': {transform: 'scale(1.05)', boxShadow: '0 0 14px 0px #A61C3C', cursor: 'pointer' }}}>
 
       <Typography sx={{ fontSize: 30, color: '#D8D78F', fontFamily: 'Rubik, sans-serif', fontWeight: 500}} gutterBottom>
