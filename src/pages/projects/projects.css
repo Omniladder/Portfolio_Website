@@ -8,13 +8,8 @@
     color: #191b2e ;
 }
 
-.card-container {
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center the cards horizontally */
-    gap: 80px; /* Optional: adds space between cards */
-    padding: 20px; /* Optional: adds padding around the container */
-    
-  }
+
+
 
 .sections{
     font-family: 'Rubik', sans-serif;

@@ -19,7 +19,7 @@ import 'swiper/css/effect-coverflow'
 
 // These are the imports for images used in large project sliders
 import haskell from '../../pics/haskell.jpeg';
-import celluar from '../../pics/cells.png';
+import cellular from '../../pics/cells.png';
 import wants from '../../pics/clientWants.png';
 import testifAi from '../../pics/TestifAi.png';
 
@@ -29,6 +29,7 @@ import testifAi from '../../pics/TestifAi.png';
 
 function projects() {
 	register();
+
 
 	return (
 		
@@ -42,10 +43,10 @@ function projects() {
 				
 				{/*<swiper slides-per-view={3} speed={500} loop={true} navigation={true} centeredSlides={false}  >*/}
 				<Swiper
-
 					modules={[EffectCoverflow, Pagination]}
 					effect='coverflow'
 					slidesPerView={3}
+					speed={500}
 
 					loop={true}
 					loopedslides={4} 
@@ -53,6 +54,13 @@ function projects() {
 					pagination={{clickable: true}}
 					className="cardswiper"
 
+					virtual={false}
+					lazy={{ loadPrevNext: true, loadPrevNextAmount: 3 }}
+
+					
+
+
+					style={{ overflow: 'visible' }}
 					coverflowEffect=
 						{{
 							rotate: -7,
@@ -60,32 +68,50 @@ function projects() {
 						}}
 				>
 					{/* Slide 1 Lambda Check*/}
-					<SwiperSlide >{
-						({ isVisible }) => isVisible ? (
-							<LargeCard title = "Lambda Check" quote="A Haskell Vulnerability Detector" image={haskell}></LargeCard>
+					<SwiperSlide>
+						{({ isVisible }) => isVisible ? (
+							<LargeCard 
+								key={`lambda-card`}
+								title = "Lambda Check" 
+								quote="A Haskell Vulnerability Detector" 
+								image={haskell}
+							></LargeCard>
 						) : null }
 					</SwiperSlide>
 
 					{/* Slide 2 Celite*/}
 					<SwiperSlide>{
-						({ isVisible }) => isVisible ? (
-							<LargeCard title = "Celite" quote="A Cellular Automata Simulator" image={celluar}></LargeCard>
+						({ isVisible }) => isVisible ? ( //Stops rendering when off of swiper
+							<LargeCard 
+								title = "Celite" 
+								quote="A Cellular Automata Simulator" 
+								image={cellular}
+							></LargeCard>
 						) : null }
 					</SwiperSlide>
 
 					{/* Slide 3 Salinity Chatbot*/}
 					<SwiperSlide>{
 						({ isVisible }) => isVisible ? (
-							<LargeCard title = "Saltcast Chatbot" quote="A Salinity Oriented RAG Chatbot" image={wants}> </LargeCard>
+							<LargeCard 
+								title = "Saltcast Chatbot" 
+								quote="A Salinity Oriented RAG Chatbot" 
+								image={wants}
+							></LargeCard>
 						) : null }
 					</SwiperSlide>
 
 					{/* Slide 4 TestifAi*/}
 					<SwiperSlide>{
 						({ isVisible }) => isVisible ? (
-							<LargeCard title = "Testif.Ai" quote="A LLM Based Test Generator" image={testifAi}></LargeCard>
+							<LargeCard 
+								title = "Testif.Ai" 
+								quote="A LLM Based Test Generator" 
+								image={testifAi}
+							></LargeCard>
 						) : null }
 					</SwiperSlide>
+
 
 
 				</Swiper>
