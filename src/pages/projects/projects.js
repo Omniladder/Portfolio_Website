@@ -51,6 +51,8 @@ function projects() {
 					loop={true}
 					loopedslides={4} 
 
+					zIndex={0}
+
 					pagination={{clickable: true}}
 					className="cardswiper"
 
@@ -58,7 +60,6 @@ function projects() {
 					lazy={{ loadPrevNext: true, loadPrevNextAmount: 3 }}
 
 					
-
 
 					style={{ overflow: 'visible' }}
 					coverflowEffect=

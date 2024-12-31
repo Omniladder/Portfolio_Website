@@ -1,6 +1,7 @@
 .projects-body{
     background-color: #191b2e;
     min-height: 80vh;
+    z-index: 0;
 }
 
 .BoxShadow{
