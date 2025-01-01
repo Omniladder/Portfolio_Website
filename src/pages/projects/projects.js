@@ -52,6 +52,7 @@ function projects() {
 					loopedslides={4} 
 
 					zIndex={0}
+					spaceBetween={100}
 
 					pagination={{clickable: true}}
 					className="cardswiper"
@@ -64,7 +65,7 @@ function projects() {
 					style={{ overflow: 'visible' }}
 					coverflowEffect=
 						{{
-							rotate: -7,
+							rotate: -12,
 							slideShadows: false	
 						}}
 				>

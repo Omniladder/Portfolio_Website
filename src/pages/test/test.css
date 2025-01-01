@@ -1,0 +1,12 @@
+html, body {
+    background-color: #191b2e;
+    height: 100%; /* Ensures it covers the full height of the viewport */
+    margin: 0;    /* Removes default browser margin */
+    padding: 0;   /* Removes default browser padding */
+    width: 100%;  /* Ensures it covers the full width of the viewport */
+}
+
+
+.cardContainer{
+    margin-top: 10%;
+}

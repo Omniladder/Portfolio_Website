@@ -9,7 +9,9 @@
     color: #191b2e ;
 }
 
-
+.swiper-pagination-bullet-active{
+    background-color: #208AAE !important;
+}
 
 
 .sections{
