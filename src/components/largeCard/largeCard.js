@@ -7,22 +7,34 @@ import { motion } from "framer-motion";
 
 import './largeCard.css';
 
+
+
+//Declare Card with Motion Module Attached
+const MotionCard = motion(Card)
+const MotionTypo = motion(Typography)
+
+
 function LargeCard({title, quote, image}) {
-  const [isCardOpened, setCardOpened] = useState(true);
-  const [cardPosition, setCardPosition] = useState({ width: '30vw', height: '35vw' });
+  const [isCardOpened, setCardOpened] = useState(false);
+  //const [cardPosition, setCardPosition] = useState({ width: '30vw', height: '35vw' });
 
 
   return (
-    <Card 
+    <MotionCard 
     
+
+    whileHover={isCardOpened ? { scale: 1.1 } : {scale : 1}}
+    transition={{ duration: 0.25, ease: "easeInOut" }}
+
+
     //Clickable Functionality
     isCardOpened = {isCardOpened} 
     onClick = {() => 
     {
       setCardOpened(!isCardOpened);
-
     }}
     
+    //Enable Motion Transistions
     layout
 
     sx={{   
@@ -32,8 +44,10 @@ function LargeCard({title, quote, image}) {
       margin: 'auto',
 
       //Transistion Speeds
-      transition: 'transform 0.25s ease-in-out',
-      transition: "all 0.5s ease",
+      //transition: 'transform 0.25s ease-in-out',
+      //transition: "all 0.5s ease", //Basic CSS way of having a nice transistion
+
+      
 
       //Adjusted Section of CSS
   
@@ -47,16 +61,22 @@ function LargeCard({title, quote, image}) {
       
       }>
 
-      <Typography sx={{ fontSize: 30, color: '#D8D78F', fontFamily: 'Rubik, sans-serif', fontWeight: 500}} gutterBottom>
+      
+      <MotionTypo layout
+        animate={{fontSize: isCardOpened ? '40px' : '60px'}}
+          sx={{ color: '#D8D78F', fontFamily: 'Rubik, sans-serif', fontWeight: 500, float : isCardOpened ? 'none': 'left' ,marginLeft: isCardOpened ? '0vw' : '4vw', marginTop: isCardOpened ? '0vw' : '1vw'}} 
+        gutterBottom>
+
           {title}
-      </Typography>
+      </MotionTypo>
+      
 
-      <img src={image} className="major-Image" />
+      <motion.img layout="position" src={image} className="major-Image" style={{float : isCardOpened ? 'none': 'right' , marginRight: isCardOpened ? '0vw' : '2.5vw', marginTop: isCardOpened ? '0vw' : '1vw'}}/>
 
-      <Typography sx={{ fontSize: 16, color: '#FF9B71', marginTop:"12px", fontStyle:'italic'}} gutterBottom>
+      <MotionTypo layout="position" sx={{ fontSize: 16, color: '#FF9B71', marginTop:"12px", fontStyle:'italic'}} gutterBottom>
           {quote}
-      </Typography>
-    </Card>
+      </MotionTypo>
+    </MotionCard>
   );
 }
 

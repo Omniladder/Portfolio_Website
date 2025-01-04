@@ -10,7 +10,6 @@
     aspect-ratio: 1/1;
     object-fit: cover;
     height: 27vw;
-    object-position: center top;
+    /*object-position: center top;*/
     border: 4px solid #208AAE;
-
 }

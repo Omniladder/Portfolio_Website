@@ -73,7 +73,6 @@ function projects() {
 					<SwiperSlide>
 						{({ isVisible }) => isVisible ? (
 							<LargeCard 
-								key={`lambda-card`}
 								title = "Lambda Check" 
 								quote="A Haskell Vulnerability Detector" 
 								image={haskell}
