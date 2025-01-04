@@ -5,8 +5,13 @@ import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
 import { motion } from "framer-motion";
 
-import github from '../../pics/github.jpg';
+
 import { useNavigate } from 'react-router-dom';
+
+
+import githubPic from '../../pics/github.jpg';
+import linkPic from '../../pics/link.jpg';
+import downloadPic from '../../pics/download.jpg';
 
 import './largeCard.css';
 
@@ -17,7 +22,7 @@ const MotionCard = motion(Card)
 const MotionTypo = motion(Typography)
 
 
-function LargeCard({title, quote, image, background}) {
+function LargeCard({title, quote, image, background, github, webLink}) {
   const [isCardOpened, setCardOpened] = useState(false);
   //const [cardPosition, setCardPosition] = useState({ width: '30vw', height: '35vw' });
 
@@ -61,17 +66,14 @@ const navigate = useNavigate();
       width: isCardOpened ? '30vw' : '60vw' , height: isCardOpened ? '35vw' : '50vw', 
       '&:hover': isCardOpened ? {  transform: 'scale(1.05)', zIndex: 10,boxShadow: '0 0 90px 0px #A61C3C', cursor: 'pointer',  transformOrigin: 'center center', willChange: 'transform',} : {cursor: 'pointer'},
       
-      }
-      
-      }>
+      }}
+
+      >
 
 
 <div>  
       
         <motion.img layout="position" src={image} className="major-Image" style={{float : isCardOpened ? 'none': 'right' , marginRight: isCardOpened ? '0vw' : '2.5vw', marginTop: isCardOpened ? '1.5vw' : '0vw'}}/>
-      
-    
-
 
         <div style={{display : 'flex', flexDirection: 'column', marginTop : isCardOpened ? 'auto' : '2vw'}}>
           <MotionTypo layout className='title'
@@ -102,7 +104,22 @@ const navigate = useNavigate();
           </motion.div>
 
         </div>
-        <motion.img className="github" src={github}></motion.img>
+
+        <div class='linkGrid'>
+          <a href={github}>
+            <motion.img class="link" src={githubPic} ></motion.img>
+          </a>
+
+          <a href={webLink}>
+          <motion.img class="link" src={linkPic}></motion.img>
+          </a>
+
+          <a href={github}>
+          <motion.img class="link" src={downloadPic}></motion.img>
+          </a>
+        </div>
+        
+        
       </div>
       
     </MotionCard>

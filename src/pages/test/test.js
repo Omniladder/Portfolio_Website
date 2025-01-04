@@ -15,6 +15,8 @@ function test(){
                         quote="A Haskell Vulnerability Detector" 
                         image={haskell}
                         background="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum metus in sapien vestibulum fringilla. Sed luctus, arcu vel vestibulum auctor, nisl nunc facilisis risus, non fermentum eros libero vel lectus. Integer aliquet nisi eget augue ornare, vel tempor mi sagittis. Vivamus nec justo nec ligula luctus ultrices id nec sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum metus in sapien vestibulum fringilla. Sed luctus, arcu vel vestibulum auctor, nisl nunc facilisis risus, non fermentum eros libero vel lectus. Integer aliquet nisi eget augue ornare, vel tempor mi sagittis. Vivamus nec justo nec ligula luctus ultrices id nec sem."
+                        github={"https://github.com/jamesmontebell/lambda-check"}
+                        webLink={"https://devpost.com/software/lambda-check"}
                     ></LargeCard>
                 </div>
             </center>
