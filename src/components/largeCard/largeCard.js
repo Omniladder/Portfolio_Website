@@ -22,11 +22,17 @@ const MotionCard = motion(Card)
 const MotionTypo = motion(Typography)
 
 
-function LargeCard({title, quote, image, background, github, webLink}) {
+function LargeCard({title, quote, image, background, github, webLink, downloadFile}) {
   const [isCardOpened, setCardOpened] = useState(false);
   //const [cardPosition, setCardPosition] = useState({ width: '30vw', height: '35vw' });
 
 const navigate = useNavigate();
+
+
+  const handleDivClick = (event) => {
+    event.stopPropagation(); // Prevent event propagation
+  };
+
   return (
     <MotionCard 
     
@@ -106,15 +112,15 @@ const navigate = useNavigate();
         </div>
 
         <div class='linkGrid'>
-          <a href={github}>
+          <a href={github} onClick={handleDivClick}>
             <motion.img class="link" src={githubPic} ></motion.img>
           </a>
 
-          <a href={webLink}>
+          <a href={webLink} onClick={handleDivClick}>
           <motion.img class="link" src={linkPic}></motion.img>
           </a>
 
-          <a href={github}>
+          <a href={downloadFile} onClick={handleDivClick} download>
           <motion.img class="link" src={downloadPic}></motion.img>
           </a>
         </div>
