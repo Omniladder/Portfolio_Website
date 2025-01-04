@@ -13,3 +13,10 @@
     /*object-position: center top;*/
     border: 4px solid #208AAE;
 }
+
+
+.quote{
+    font-size: 14px;
+    color: '#FF9B71';
+    font-style: italic;
+}

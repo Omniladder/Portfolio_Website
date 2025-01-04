@@ -14,6 +14,7 @@ function test(){
                         title = "Lambda Check" 
                         quote="A Haskell Vulnerability Detector" 
                         image={haskell}
+                        background="Lorem Ipsum"
                     ></LargeCard>
                 </div>
             </center>
