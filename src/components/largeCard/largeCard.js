@@ -5,6 +5,9 @@ import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
 import { motion } from "framer-motion";
 
+import github from '../../pics/github.jpg';
+import { useNavigate } from 'react-router-dom';
+
 import './largeCard.css';
 
 
@@ -18,7 +21,7 @@ function LargeCard({title, quote, image, background}) {
   const [isCardOpened, setCardOpened] = useState(false);
   //const [cardPosition, setCardPosition] = useState({ width: '30vw', height: '35vw' });
 
-
+const navigate = useNavigate();
   return (
     <MotionCard 
     
@@ -63,10 +66,13 @@ function LargeCard({title, quote, image, background}) {
       }>
 
 
-<div >  
-      <motion.img layout="position" src={image} className="major-Image" style={{float : isCardOpened ? 'none': 'right' , marginRight: isCardOpened ? '0vw' : '2.5vw', marginTop: isCardOpened ? '1.5vw' : '0vw'}}/>
-        
-        
+<div>  
+      
+        <motion.img layout="position" src={image} className="major-Image" style={{float : isCardOpened ? 'none': 'right' , marginRight: isCardOpened ? '0vw' : '2.5vw', marginTop: isCardOpened ? '1.5vw' : '0vw'}}/>
+      
+    
+
+
         <div style={{display : 'flex', flexDirection: 'column', marginTop : isCardOpened ? 'auto' : '2vw'}}>
           <MotionTypo layout className='title'
             animate={{fontSize: isCardOpened ? '40px' : '50px'}}
@@ -83,7 +89,20 @@ function LargeCard({title, quote, image, background}) {
 
               {quote}
           </MotionTypo>
+
+
+          <motion.div class="backgroundDiv" animate={{ y: isCardOpened ? '27vw' : '0vw',}} transition={{ duration: .45, type : 'spring', damping: 15, stiffness: 130}}>
+            
+            <div class="backgroundHead">
+            Background:
+            </div>
+            <div class="backgroundText">
+              {background}
+            </div>
+          </motion.div>
+
         </div>
+        <motion.img className="github" src={github}></motion.img>
       </div>
       
     </MotionCard>
