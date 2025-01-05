@@ -34,7 +34,8 @@ const navigate = useNavigate();
   };
 
   return (
-
+    <>
+    { isCardOpened ? null : <div class="greyout" onClick={handleDivClick} style={{pointerEvents: 'auto', pointer : 'none'}}></div>}
     <MotionCard 
     
 
@@ -77,8 +78,6 @@ const navigate = useNavigate();
 
       >
 
-
-      {/*<div class="background"></div>*/}
 
       <div>  
         <div style={{display : 'flex', flexDirection: 'column', maxWidth: '28vw', float: isCardOpened ? 'none' : 'right'}}>
@@ -146,8 +145,10 @@ const navigate = useNavigate();
         <img src={tech5} class='techImg'/>
         <img src={tech6} class='techImg'/>
       </div>
+
+     
     </MotionCard>
-   
+    </>
   
   );
 }
