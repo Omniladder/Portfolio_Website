@@ -52,7 +52,7 @@
     border-radius: 30px;
     border-width: 4px;
     max-width: 25vw;
-    height: 30vw;
+    height: 27vw;
     margin-left: 2vw;
     display: flex;
     flex-direction: column;
@@ -88,8 +88,44 @@ a {
 .linkGrid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 29vw;
-    float : right;
-    gap: 3.5vw;
-    margin-right: 4.5vw;
+    max-width: 26.5vw;
+    /*float : right;*/
+    grid-template-rows: 1fr;
+    /*margin-right: 4.5vw;*/
+    margin-top: .8vw;
+}
+
+.TechnologyHead{
+    font-weight: 700;
+    color: #D8D78F;
+    font-size: 2vw;
+    margin-left: 3vw;
+    margin-top: .3vw;
+    text-align: left;
+    
+    
+}
+
+
+.techGrid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-left: 2vw;
+    
+    width: 54vw;
+    grid-template-rows: 1fr;
+    
+    margin-top: 1vw;
+    
+    
+}
+
+.background{
+    position: absolute;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+.techImg{
+    max-height: 6.5vw;
 }

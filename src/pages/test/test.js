@@ -3,6 +3,12 @@ import './test.css'
 import LargeCard from '../../components/largeCard/largeCard.js';
 import haskell from '../../pics/haskell.jpeg';
 
+import haskellLogo from '../../pics/haskellLogo.png';
+import pythonLogo from '../../pics/pythonLogo.png';
+import fastAPILogo from '../../pics/fastapiLogo.svg';
+import SQLLogo from '../../pics/sqlLogo.png';
+import restLogo from '../../pics/restLogo.png';
+
 
 function test(){
 
@@ -19,6 +25,11 @@ function test(){
                         github={"https://github.com/jamesmontebell/lambda-check"}
                         webLink={"https://devpost.com/software/lambda-check"}
                         downloadFile={"./downloads/Resume-1.pdf"}
+                        tech1={haskellLogo}
+                        tech2={pythonLogo}
+                        tech3={fastAPILogo}
+                        tech4={SQLLogo}
+                        tech5={restLogo}
                     ></LargeCard>
                 </div>
             </center>

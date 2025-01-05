@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
-import { motion } from "framer-motion";
+import { animate, motion } from "framer-motion";
 
 
 import { useNavigate } from 'react-router-dom';
@@ -22,8 +22,8 @@ const MotionCard = motion(Card)
 const MotionTypo = motion(Typography)
 
 
-function LargeCard({title, quote, image, background, github, webLink, downloadFile}) {
-  const [isCardOpened, setCardOpened] = useState(false);
+function LargeCard({title, quote, image, background, github, webLink, downloadFile, tech1, tech2, tech3, tech4, tech5, tech6}) {
+  const [isCardOpened, setCardOpened] = useState(true);
   //const [cardPosition, setCardPosition] = useState({ width: '30vw', height: '35vw' });
 
 const navigate = useNavigate();
@@ -34,6 +34,7 @@ const navigate = useNavigate();
   };
 
   return (
+
     <MotionCard 
     
 
@@ -69,7 +70,7 @@ const navigate = useNavigate();
       position: isCardOpened ? 'relative' : 'fixed', inset: isCardOpened ? 'auto' : '0 0 0 0',
       
       
-      width: isCardOpened ? '30vw' : '60vw' , height: isCardOpened ? '35vw' : '50vw', 
+      width: isCardOpened ? '30vw' : '60vw' , height: isCardOpened ? '35vw' : '48vw', 
       '&:hover': isCardOpened ? {  transform: 'scale(1.05)', zIndex: 10,boxShadow: '0 0 90px 0px #A61C3C', cursor: 'pointer',  transformOrigin: 'center center', willChange: 'transform',} : {cursor: 'pointer'},
       
       }}
@@ -77,14 +78,29 @@ const navigate = useNavigate();
       >
 
 
-<div>  
-      
-        <motion.img layout="position" src={image} className="major-Image" style={{float : isCardOpened ? 'none': 'right' , marginRight: isCardOpened ? '0vw' : '2.5vw', marginTop: isCardOpened ? '1.5vw' : '0vw'}}/>
+      {/*<div class="background"></div>*/}
+
+      <div>  
+        <div style={{display : 'flex', flexDirection: 'column', maxWidth: '28vw', float: isCardOpened ? 'none' : 'right'}}>
+          <motion.img layout="position" src={image} className="major-Image" style={{float : isCardOpened ? 'none': 'right' , marginRight: isCardOpened ? '0vw' : '2.5vw', marginTop: isCardOpened ? '1.5vw' : '0vw'}}/>
+
+
+          {isCardOpened ? null : (
+          <motion.div class='linkGrid' >
+
+            {github  ? (<a href={github} onClick={handleDivClick}> <motion.img class="link"  src={githubPic}/></a>) : null}
+
+            {webLink ? (<a href={webLink} onClick={handleDivClick}> <motion.img class="link"   src={linkPic}/> </a> ) : null}
+
+            {downloadFile ? (<a href={downloadFile} onClick={handleDivClick} download> <motion.img class="link" src={downloadPic}/></a>) : null}
+          </motion.div>
+        )}
+        </div>
 
         <div style={{display : 'flex', flexDirection: 'column', marginTop : isCardOpened ? 'auto' : '2vw'}}>
           <MotionTypo layout className='title'
             animate={{fontSize: isCardOpened ? '40px' : '50px'}}
-              sx={{ color: '#D8D78F', fontFamily: 'Rubik, sans-serif', fontWeight: 500, /*float : isCardOpened ? 'none': 'left', marginLeft : isCardOpened ?  'auto': '3vw'*/}} 
+              sx={{ color: '#D8D78F', fontFamily: 'Rubik, sans-serif', fontWeight: 500}} 
             >
 
               {title}
@@ -111,23 +127,25 @@ const navigate = useNavigate();
 
         </div>
 
-        <div class='linkGrid'>
-          <a href={github} onClick={handleDivClick}>
-            <motion.img class="link" src={githubPic} ></motion.img>
-          </a>
 
-          <a href={webLink} onClick={handleDivClick}>
-          <motion.img class="link" src={linkPic}></motion.img>
-          </a>
-
-          <a href={downloadFile} onClick={handleDivClick} download>
-          <motion.img class="link" src={downloadPic}></motion.img>
-          </a>
-        </div>
-        
+          
+            
+         
         
       </div>
-      
+
+      <div class="TechnologyHead">
+        Technologies:
+      </div>
+            
+      <div class="techGrid" >
+        <img src={tech1} class='techImg'/>
+        <img src={tech2} class='techImg'/>
+        <img src={tech3} class='techImg'/>
+        <img src={tech4} class='techImg'/>
+        <img src={tech5} class='techImg'/>
+        <img src={tech6} class='techImg'/>
+      </div>
     </MotionCard>
    
   
