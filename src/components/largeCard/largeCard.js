@@ -3,10 +3,8 @@ import { useState } from 'react';
 
 import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
-import { motion, transform } from "framer-motion";
+import { motion } from "framer-motion";
 
-
-import { useNavigate } from 'react-router-dom';
 
 
 
@@ -23,11 +21,9 @@ const MotionCard = motion.create(Card)
 const MotionTypo = motion.create(Typography)
 
 
-export function LargeCard({title, quote, image, background, github, webLink, downloadFile, tech1, tech2, tech3, tech4, tech5, tech6}) {
-  const [iscardopened, setCardOpened] = useState(true);
+export function LargeCard({title, quote, image, background, github, webLink, downloadFile, tech1, tech2, tech3, tech4, tech5, tech6, initalOpen = true}) {
+  const [iscardopened, setCardOpened] = useState(initalOpen);
   //const [cardPosition, setCardPosition] = useState({ width: '30vw', height: '35vw' });
-
-  const navigate = useNavigate();
 
 
   const handleDivClick = (event) => {
@@ -48,10 +44,13 @@ export function LargeCard({title, quote, image, background, github, webLink, dow
 
     //Clickable Functionality
     iscardopened = {iscardopened} 
+
+    /*
     onClick = {() => 
     {
       setCardOpened(!iscardopened);
     }}
+      */
     
     //Enable Motion Transistions
     layout
