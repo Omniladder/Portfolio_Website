@@ -102,6 +102,7 @@ export function LargeCard({title, quote, image, background, github, webLink, dow
         </div>
 
         <div style={{display : 'flex', flexDirection: 'column', marginTop : iscardopened ? 'auto' : '2vw'}}>
+          <div style={{textAlign : 'center'}}>
           <MotionTypo layout className='title'
             animate={{fontSize: iscardopened ? '40px' : '50px'}}
               sx={{ color: '#D8D78F', fontFamily: 'Rubik, sans-serif', fontWeight: 500}} 
@@ -117,7 +118,7 @@ export function LargeCard({title, quote, image, background, github, webLink, dow
 
               {quote}
           </MotionTypo>
-
+          </div>
 
           <motion.div className="backgroundDiv" animate={{ y: iscardopened ? '27vw' : '0vw',}} transition={{ duration: .45, type : 'spring', damping: 15, stiffness: 130}}>
             

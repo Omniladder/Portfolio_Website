@@ -110,9 +110,8 @@ a {
 }
 
 
-.card{
-    
-}
+
+
 
 .techGrid{
     display: grid;
@@ -131,7 +130,7 @@ a {
     position: fixed;
     background-color: black;
     inset: 0 0 0 0;
-    opacity: 40%;
+    opacity: 60%;
     height: 100vh;
     width: 100vw;
     z-index: 1 !important;
