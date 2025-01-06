@@ -93,6 +93,7 @@ a {
     max-width: 26.5vw;
     /*float : right;*/
     grid-template-rows: 1fr;
+    gap: 3vw;
     /*margin-right: 4.5vw;*/
     margin-top: .8vw;
 }

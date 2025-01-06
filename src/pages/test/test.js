@@ -10,15 +10,9 @@ import SQLLogo from '../../pics/sqlLogo.png';
 import restLogo from '../../pics/restLogo.png';
 
 
-import {cloneElement} from 'react'
 
 function test(){
 
-    let cardClone;
-    const cloneCard = (component) => {
-        cardClone = cloneElement(component)
-        console.log("Card Cloned");
-    }
 
     const lambdaCard = (
         <LargeCard 
@@ -34,19 +28,17 @@ function test(){
             tech3={fastAPILogo}
             tech4={SQLLogo}
             tech5={restLogo}
-            onClick={() => cloneCard()}
         ></LargeCard>
     )
 
     return(
         <div className="App">
-            <center>
-                <div className="cardContainer">
-                    {lambdaCard}
-                </div>
-            </center>
+            
+                
+            {lambdaCard}
+                
+            
 
-            <div>{cardClone}</div>
         </div>
     )
 }

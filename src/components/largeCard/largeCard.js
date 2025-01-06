@@ -85,8 +85,10 @@ export function LargeCard({title, quote, image, background, github, webLink, dow
       <div>  
         <div style={{display : 'flex' ,  flexDirection: 'column', maxWidth: '28vw', justifyContent : iscardopened ? 'center' : 'none',
         alignItems: iscardopened ? 'center' : 'none', float: iscardopened ? 'none' : 'right', width: '100%'}} >
-          <motion.img layout="position" src={image} className="major-Image" style={{float : iscardopened ? 'auto': 'right' ,marginLeft: iscardopened ? '0' : 'auto',marginRight: iscardopened ? 'auto' : '2.5vw', marginTop: iscardopened ? '1.5vw' : '0vw'}}/>
 
+          
+          <motion.img layout="position" src={image} className="major-Image" style={{float : iscardopened ? 'auto': 'right' ,marginLeft: iscardopened ? '1.25vw' : 'auto',marginRight: iscardopened ? 'auto' : '2.5vw', marginTop: iscardopened ? '1.5vw' : '0vw'}}/>
+          
 
           {iscardopened ? null : (
           <motion.div className='linkGrid' >
