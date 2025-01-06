@@ -3,10 +3,11 @@ import { useState } from 'react';
 
 import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
-import { animate, motion } from "framer-motion";
+import { motion, transform } from "framer-motion";
 
 
 import { useNavigate } from 'react-router-dom';
+
 
 
 import githubPic from '../../pics/github.jpg';
@@ -18,15 +19,15 @@ import './largeCard.css';
 
 
 //Declare Card with Motion Module Attached
-const MotionCard = motion(Card)
-const MotionTypo = motion(Typography)
+const MotionCard = motion.create(Card)
+const MotionTypo = motion.create(Typography)
 
 
-function LargeCard({title, quote, image, background, github, webLink, downloadFile, tech1, tech2, tech3, tech4, tech5, tech6}) {
-  const [isCardOpened, setCardOpened] = useState(true);
+export function LargeCard({title, quote, image, background, github, webLink, downloadFile, tech1, tech2, tech3, tech4, tech5, tech6}) {
+  const [iscardopened, setCardOpened] = useState(true);
   //const [cardPosition, setCardPosition] = useState({ width: '30vw', height: '35vw' });
 
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
 
   const handleDivClick = (event) => {
@@ -34,20 +35,22 @@ const navigate = useNavigate();
   };
 
   return (
-    <>
-    { isCardOpened ? null : <div class="greyout" onClick={handleDivClick} style={{pointerEvents: 'auto', pointer : 'none'}}></div>}
+    <div>
+    
+    { iscardopened ? null : <div className="greyout" onClick={handleDivClick} style={{pointerEvents: 'auto', pointer : 'none'}}></div>}
     <MotionCard 
     
 
-    whileHover={isCardOpened ? { scale: 1.1 } : {scale : 1}}
+    whileHover={iscardopened ? { scale: 1.1 } : {scale : 1}}
     transition={{ duration: 0.25, ease: "easeInOut" }}
 
+    className='card'
 
     //Clickable Functionality
-    isCardOpened = {isCardOpened} 
+    iscardopened = {iscardopened} 
     onClick = {() => 
     {
-      setCardOpened(!isCardOpened);
+      setCardOpened(!iscardopened);
     }}
     
     //Enable Motion Transistions
@@ -68,11 +71,11 @@ const navigate = useNavigate();
 
       //Adjusted Section of CSS
   
-      position: isCardOpened ? 'relative' : 'fixed', inset: isCardOpened ? 'auto' : '0 0 0 0',
+      position: iscardopened ? 'relative' : 'fixed', inset: iscardopened ? 'auto' : '0 0 0 0',
       
       
-      width: isCardOpened ? '30vw' : '60vw' , height: isCardOpened ? '35vw' : '48vw', 
-      '&:hover': isCardOpened ? {  transform: 'scale(1.05)', zIndex: 10,boxShadow: '0 0 90px 0px #A61C3C', cursor: 'pointer',  transformOrigin: 'center center', willChange: 'transform',} : {cursor: 'pointer'},
+      width: iscardopened ? '30vw' : '60vw' , height: iscardopened ? '35vw' : '48vw', 
+      '&:hover': iscardopened ? {  transform: 'scale(1.05)', zIndex: 10,boxShadow: '0 0 90px 0px #A61C3C', cursor: 'pointer',  transformOrigin: 'center center', willChange: 'transform',} : {cursor: 'pointer'},
       
       }}
 
@@ -80,25 +83,26 @@ const navigate = useNavigate();
 
 
       <div>  
-        <div style={{display : 'flex', flexDirection: 'column', maxWidth: '28vw', float: isCardOpened ? 'none' : 'right'}}>
-          <motion.img layout="position" src={image} className="major-Image" style={{float : isCardOpened ? 'none': 'right' , marginRight: isCardOpened ? '0vw' : '2.5vw', marginTop: isCardOpened ? '1.5vw' : '0vw'}}/>
+        <div style={{display : 'flex' ,  flexDirection: 'column', maxWidth: '28vw', justifyContent : iscardopened ? 'center' : 'none',
+        alignItems: iscardopened ? 'center' : 'none', float: iscardopened ? 'none' : 'right', width: '100%'}} >
+          <motion.img layout="position" src={image} className="major-Image" style={{float : iscardopened ? 'auto': 'right' ,marginLeft: iscardopened ? '0' : 'auto',marginRight: iscardopened ? 'auto' : '2.5vw', marginTop: iscardopened ? '1.5vw' : '0vw'}}/>
 
 
-          {isCardOpened ? null : (
-          <motion.div class='linkGrid' >
+          {iscardopened ? null : (
+          <motion.div className='linkGrid' >
 
-            {github  ? (<a href={github} onClick={handleDivClick}> <motion.img class="link"  src={githubPic}/></a>) : null}
+            {github  ? (<a href={github} onClick={handleDivClick}> <motion.img className="link"  src={githubPic}/></a>) : null}
 
-            {webLink ? (<a href={webLink} onClick={handleDivClick}> <motion.img class="link"   src={linkPic}/> </a> ) : null}
+            {webLink ? (<a href={webLink} onClick={handleDivClick}> <motion.img className="link"   src={linkPic}/> </a> ) : null}
 
-            {downloadFile ? (<a href={downloadFile} onClick={handleDivClick} download> <motion.img class="link" src={downloadPic}/></a>) : null}
+            {downloadFile ? (<a href={downloadFile} onClick={handleDivClick} download> <motion.img className="link" src={downloadPic}/></a>) : null}
           </motion.div>
         )}
         </div>
 
-        <div style={{display : 'flex', flexDirection: 'column', marginTop : isCardOpened ? 'auto' : '2vw'}}>
+        <div style={{display : 'flex', flexDirection: 'column', marginTop : iscardopened ? 'auto' : '2vw'}}>
           <MotionTypo layout className='title'
-            animate={{fontSize: isCardOpened ? '40px' : '50px'}}
+            animate={{fontSize: iscardopened ? '40px' : '50px'}}
               sx={{ color: '#D8D78F', fontFamily: 'Rubik, sans-serif', fontWeight: 500}} 
             >
 
@@ -114,12 +118,12 @@ const navigate = useNavigate();
           </MotionTypo>
 
 
-          <motion.div class="backgroundDiv" animate={{ y: isCardOpened ? '27vw' : '0vw',}} transition={{ duration: .45, type : 'spring', damping: 15, stiffness: 130}}>
+          <motion.div className="backgroundDiv" animate={{ y: iscardopened ? '27vw' : '0vw',}} transition={{ duration: .45, type : 'spring', damping: 15, stiffness: 130}}>
             
-            <div class="backgroundHead">
+            <div className="backgroundHead">
             Background:
             </div>
-            <div class="backgroundText">
+            <div className="backgroundText">
               {background}
             </div>
           </motion.div>
@@ -133,28 +137,23 @@ const navigate = useNavigate();
         
       </div>
 
-      <div class="TechnologyHead">
+      <div className="TechnologyHead">
         Technologies:
       </div>
             
-      <div class="techGrid" >
-        <img src={tech1} class='techImg'/>
-        <img src={tech2} class='techImg'/>
-        <img src={tech3} class='techImg'/>
-        <img src={tech4} class='techImg'/>
-        <img src={tech5} class='techImg'/>
-        <img src={tech6} class='techImg'/>
+      <div className="techGrid" >
+        <img src={tech1} className='techImg'/>
+        <img src={tech2} className='techImg'/>
+        <img src={tech3} className='techImg'/>
+        <img src={tech4} className='techImg'/>
+        <img src={tech5} className='techImg'/>
+        <img src={tech6} className='techImg'/>
       </div>
 
      
     </MotionCard>
-    </>
+   
+    </div>
   
   );
 }
-
-
-
-
-
-export default LargeCard;

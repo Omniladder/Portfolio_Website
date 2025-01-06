@@ -10,7 +10,9 @@
     aspect-ratio: 1/1;
     object-fit: cover;
     height: 27vw;
-    /*object-position: center top;*/
+    margin-left: auto;
+    margin-right: auto;
+    object-position: center;
     border: 4px solid #208AAE;
 }
 
@@ -106,6 +108,10 @@ a {
     
 }
 
+
+.card{
+    
+}
 
 .techGrid{
     display: grid;

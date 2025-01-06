@@ -2,7 +2,7 @@ import './projects.css';
 
 //These are the internally created components created for this program
 import WebHeader from '../../components/header/header.js';
-import LargeCard from '../../components/largeCard/largeCard.js';
+import {LargeCard} from '../../components/largeCard/largeCard.js';
 
 
 
@@ -18,7 +18,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/effect-coverflow'
 
 // These are the imports for images used in large project sliders
-import haskell from '../../pics/haskell.jpeg';
+import lambda from '../../pics/haskell.jpeg';
 import cellular from '../../pics/cells.png';
 import wants from '../../pics/clientWants.png';
 import testifAi from '../../pics/TestifAi.png';
@@ -61,8 +61,8 @@ function projects() {
 					lazy={{ loadPrevNext: true, loadPrevNextAmount: 3 }}
 
 					
-
-					style={{ overflow: 'visible' }}
+					
+					style={{ overflow: 'visible' , width: '100%'}}
 					coverflowEffect=
 						{{
 							rotate: -12,
@@ -75,7 +75,7 @@ function projects() {
 							<LargeCard 
 								title = "Lambda Check" 
 								quote="A Haskell Vulnerability Detector" 
-								image={haskell}
+								image={lambda}
 							></LargeCard>
 						) : null }
 					</SwiperSlide>
@@ -90,6 +90,7 @@ function projects() {
 							></LargeCard>
 						) : null }
 					</SwiperSlide>
+
 
 					{/* Slide 3 Salinity Chatbot*/}
 					<SwiperSlide>{
