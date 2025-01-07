@@ -35,11 +35,13 @@ export function Projects() {
 			</header>
 			<div className='projects-body'>
 				<div className='BoxShadow'>_</div>
-				<div className="sections">Major Projects</div>
+				<div className="sections">Featured Projects</div>
 				
 					<ProjectSlider></ProjectSlider>				
 				
-				<div className="sections">Minor Projects</div>
+				<div className="sections">Project Catalog</div>
+
+
 			</div>
 		</div>
 	);
