@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.85d77df0.css",
-    "main.js": "/static/js/main.c3805e24.js",
+    "main.css": "/static/css/main.39de4011.css",
+    "main.js": "/static/js/main.c76c2db2.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
     "static/media/dustin.png": "/static/media/dustin.5342b10906fbf8a326da.png",
     "static/media/cells.png": "/static/media/cells.8262d3559241fd3c383b.png",
@@ -16,12 +16,12 @@
     "static/media/download.jpg": "/static/media/download.32a0562dd8c0a3cbaf94.jpg",
     "index.html": "/index.html",
     "static/media/fastapiLogo.svg": "/static/media/fastapiLogo.6c84dc4ea9626837be0ce2c5523b6d52.svg",
-    "main.85d77df0.css.map": "/static/css/main.85d77df0.css.map",
-    "main.c3805e24.js.map": "/static/js/main.c3805e24.js.map",
+    "main.39de4011.css.map": "/static/css/main.39de4011.css.map",
+    "main.c76c2db2.js.map": "/static/js/main.c76c2db2.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.85d77df0.css",
-    "static/js/main.c3805e24.js"
+    "static/css/main.39de4011.css",
+    "static/js/main.c76c2db2.js"
   ]
 }
