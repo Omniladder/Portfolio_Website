@@ -1,0 +1,142 @@
+/* src/fonts.css */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sanchez:wght@400;500&display=swap');
+
+
+.major-Image{
+    border-radius: 30px;
+    max-height: 100%;
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    /*height: 27vw;*/
+    margin-left: auto;
+    margin-right: auto;
+    object-position: center;
+    border: 4px solid #208AAE;
+}
+
+
+.quote{
+    font-size: 14px;
+    color: '#FF9B71';
+    font-style: italic;
+}
+
+.backgroundHead{
+    align-items: flex-start;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: #D8D78F;
+    margin-top: .5vw;
+    margin-bottom: .4vw;
+}
+
+.backgroundText{
+    max-width: 80%;
+    margin-left: 10%;
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 1vw;
+    font-weight: 400;
+    color: #D8D78F;
+    margin-top: .5vw;
+    margin-bottom: .4vw;
+}
+
+.backgroundDiv{
+    text-align: justify;
+    text-indent: 2em;
+    background-color: #191b2e;
+    color: #D8D78F;
+    border: 4px solid #252636;
+    border-radius: 30px;
+    border-width: 4px;
+    max-width: 25vw;
+    height: 27vw;
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 1vw;
+
+    align-items: flex-start;
+    
+}
+
+a {
+    text-decoration: none; color: inherit;
+}
+
+
+.link:hover ~ .mainCard,
+.link:active ~ .mainCard {
+    pointer-events: none;
+}
+
+
+.link{
+    border-radius: 10000vw;
+    width: 5vw;
+    box-shadow: 5px 5px 15px ;
+    
+}
+
+.link:hover{
+    scale: 1.07;
+}
+
+.linkGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 26.5vw;
+    /*float : right;*/
+    grid-template-rows: 1fr;
+    gap: 3vw;
+    /*margin-right: 4.5vw;*/
+    margin-top: .8vw;
+}
+
+.TechnologyHead{
+    font-weight: 700;
+    color: #D8D78F;
+    font-size: 2vw;
+    margin-left: 3vw;
+    margin-top: .3vw;
+    text-align: left;
+    
+    
+}
+
+
+
+
+
+.techGrid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-left: 2vw;
+    
+    width: 54vw;
+    grid-template-rows: 1fr;
+    
+    margin-top: 1vw;
+    
+    
+}
+
+.greyout{
+    position: fixed;
+    background-color: black;
+    inset: 0 0 0 0;
+    opacity: 60%;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1 !important;
+}
+
+
+.techImg{
+    max-height: 6.5vw;
+}

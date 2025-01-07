@@ -2,9 +2,8 @@ import './test.css'
 
 import  React, { useState } from 'react';
 
-import Modal from '@mui/material/Modal';
 
-import {LargeCard} from '../../components/largeCard/largeCard.js';
+import {SmallCard} from '../../components/smallCard/smallCard.js';
 import haskell from '../../pics/haskell.jpeg';
 
 import haskellLogo from '../../pics/haskellLogo.png';
@@ -30,29 +29,14 @@ const lambdaCardProps = {
 
 function Test(){
 
-    //Lambda Open Test Functions
-    const [isLambdaOpen, setLambdaOpen] = useState(false);
-    const lambdaOpen = () => setLambdaOpen(true);
-    const lambdaClose = () => setLambdaOpen(false);
 
 
 
     return(
         <div className="App">
-            <div style={{width: 'fit-content'}} onClick = {() => {lambdaOpen()}}><LargeCard {...{...lambdaCardProps, initalOpen : true }}></LargeCard></div>
-            
-            <Modal
-                open={isLambdaOpen}
-                onClose={lambdaClose}
-                aria-labelledby="lambdaModal"
-                aria-describedby="Opened version of card for Lambda check">
-                    
-                <div style={{width: 'fit-content'}} onClick = {() => {lambdaClose()}}>
-                    <LargeCard {...{...lambdaCardProps, initalOpen : false }}></LargeCard>
-                </div>
-            </Modal>
-            
-
+            <center>
+            <SmallCard {...{...lambdaCardProps, initalOpen : true }}></SmallCard>
+            </center>
         </div>
     )
 }
