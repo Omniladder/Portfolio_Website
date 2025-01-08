@@ -104,7 +104,7 @@ export function SmallCard({title, quote, image, background, github, webLink, dow
         <div style={{display : 'flex', flexDirection: 'column', marginTop : iscardopened ? '0vw' : '2vw'}}>
           <div style={{textAlign : 'center'}}>
           <MotionTypo layout className='title'
-            animate={{fontSize: iscardopened ? '40px' : '50px'}}
+            animate={{fontSize: iscardopened ? '2vw' : '50px'}}
               sx={{ color: '#D8D78F', fontFamily: 'Rubik, sans-serif', fontWeight: 500}} 
             >
 

@@ -71,7 +71,7 @@ export function LargeCard({title, quote, image, background, github, webLink, dow
       //Adjusted Section of CSS
   
       position: iscardopened ? 'relative' : 'fixed', inset: iscardopened ? 'auto' : '0 0 0 0',
-      
+      zIndex: iscardopened ? 10 : 12,
       
       width: iscardopened ? '30vw' : '60vw' , height: iscardopened ? '35vw' : '48vw', 
       '&:hover': iscardopened ? {  transform: 'scale(1.05)', zIndex: 10,boxShadow: '0 0 90px 0px #A61C3C', cursor: 'pointer',  transformOrigin: 'center center', willChange: 'transform',} : {cursor: 'pointer'},
