@@ -33,7 +33,7 @@ export function SmallCard({title, quote, image, background, github, webLink, dow
   return (
     <div>
     
-    { iscardopened ? null : <div className="greyout" onClick={handleDivClick} style={{pointerEvents: 'auto', pointer : 'none'}}></div>}
+    { iscardopened ? null : <div className="greyout" onClick={handleDivClick} style={{pointerEvents: 'auto', pointer : 'none', zIndex : 99999}}></div>}
     <MotionCard 
     
 
@@ -58,7 +58,7 @@ export function SmallCard({title, quote, image, background, github, webLink, dow
     sx={{   
       
       //CSS Styling
-      zIndex: 10, backgroundColor: '#A61C3C', borderRadius: '10%', border: '5px solid black', borderColor: '#FF9B71',  boxShadow: '15px 13px 8px rgba(0, 0, 0, 0.5)', 
+      zIndex: iscardopened ? 10 : 12, backgroundColor: '#A61C3C', borderRadius: '10%', border: '5px solid black', borderColor: '#FF9B71',  boxShadow: '15px 13px 8px rgba(0, 0, 0, 0.5)', 
 
       margin: 'auto',
 

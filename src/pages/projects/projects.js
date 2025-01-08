@@ -15,6 +15,7 @@ import { register } from 'swiper/element/bundle';
 import 'swiper/css';
 import 'swiper/css/pagination'
 import 'swiper/css/effect-coverflow'
+import { SmallCard } from '../../components/smallCard/smallCard.js';
 
 
 
@@ -41,6 +42,37 @@ export function Projects() {
 				
 				<div className="sections">Project Catalog</div>
 
+				<center>
+					<div className='projectGrid'>
+						<SmallCard
+							title="Lambda Check"
+						></SmallCard>
+
+						<SmallCard
+							title="Lambda Check"
+						></SmallCard>
+
+						<SmallCard
+							title="Lambda Check"
+						></SmallCard>
+
+						<SmallCard
+							title="Lambda Check"
+						></SmallCard>
+
+						<SmallCard
+							title="Lambda Check"
+						></SmallCard>
+
+						<SmallCard
+							title="Lambda Check"
+						></SmallCard>
+
+						<SmallCard
+							title="Lambda Check"
+						></SmallCard>
+					</div>
+				</center>
 
 			</div>
 		</div>
