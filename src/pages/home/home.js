@@ -8,7 +8,10 @@ function home() {
     <div className="App">
       <header className="header">
         <div>
-          <WebHeader title={"Home"} quote={"In Your Heart You Know He's Right!"} />
+          <WebHeader
+            title={"Home"}
+            quote={"In Your Heart You Know He's Right!"}
+          />
         </div>
       </header>
       <body className="App-header">

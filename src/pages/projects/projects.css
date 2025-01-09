@@ -1,43 +1,40 @@
-.projects-body{
-    background-color: #191b2e;
-    min-height: 80vh;
-    z-index: 0;
+.projects-body {
+  background-color: #191b2e;
+  min-height: 80vh;
+  z-index: 0;
 }
 
-.BoxShadow{
-    box-shadow: 0 -0px 0 #191b2e;
-    color: #191b2e ;
+.BoxShadow {
+  box-shadow: 0 -0px 0 #191b2e;
+  color: #191b2e;
 }
 
-.swiper-pagination-bullet-active{
-    background-color: #208AAE !important;
+.swiper-pagination-bullet-active {
+  background-color: #208aae !important;
 }
 
-
-.sections{
-    font-family: 'Rubik', sans-serif;
-    font-size: 2.1vw;
-    font-weight: 600;
-    color: #D8D78F;
-    margin-bottom: 15px;
-    margin-top: 25px;
-    justify-content: left;
-    display: flex;
-    align-items: flex-start;
-    padding-left: 40px;
-    padding-bottom: 20px;
-    
+.sections {
+  font-family: "Rubik", sans-serif;
+  font-size: 2.1vw;
+  font-weight: 600;
+  color: #d8d78f;
+  margin-bottom: 15px;
+  margin-top: 25px;
+  justify-content: left;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 40px;
+  padding-bottom: 20px;
 }
 
-.cardswiper{
-    overflow: visible !important;
-    
+.cardswiper {
+  overflow: visible !important;
 }
 
-.projectGrid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 4 columns */
-    gap: 10px;
-    row-gap: 4vw;
-    margin-top: 2vw;
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 4 columns */
+  gap: 10px;
+  row-gap: 4vw;
+  margin-top: 2vw;
 }

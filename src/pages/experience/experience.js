@@ -6,7 +6,12 @@ function projects() {
     <div className="App">
       <header className="header">
         <div>
-          <WebHeader title={"Experience"} quote={"Success is to be measured not so much by the position that one has reached in life as by the obstacles which he has overcome"} />
+          <WebHeader
+            title={"Experience"}
+            quote={
+              "Success is to be measured not so much by the position that one has reached in life as by the obstacles which he has overcome"
+            }
+          />
         </div>
       </header>
       <body className=""></body>

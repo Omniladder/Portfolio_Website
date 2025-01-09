@@ -6,7 +6,12 @@ function projects() {
     <div className="App">
       <header className="header">
         <div>
-          <WebHeader title={"About Me"} quote={"Whatever crushes individuality is despotism, by whatever name it may be called"} />
+          <WebHeader
+            title={"About Me"}
+            quote={
+              "Whatever crushes individuality is despotism, by whatever name it may be called"
+            }
+          />
         </div>
       </header>
       <body className=""></body>

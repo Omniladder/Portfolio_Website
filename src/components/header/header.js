@@ -13,7 +13,12 @@ function WebHeader({ title, quote }) {
         <div className="quote">"{quote}"</div>
       </div>
       <div className="nav-bar">
-        <img src={logo} className="logo" alt="self" onClick={() => navigate("/")} />
+        <img
+          src={logo}
+          className="logo"
+          alt="self"
+          onClick={() => navigate("/")}
+        />
         <div className="nav-buttons">
           <button className="nav-button" onClick={() => navigate("/")}>
             Home
@@ -21,7 +26,10 @@ function WebHeader({ title, quote }) {
           <button className="nav-button" onClick={() => navigate("/projects")}>
             Projects
           </button>
-          <button className="nav-button" onClick={() => navigate("/experience")}>
+          <button
+            className="nav-button"
+            onClick={() => navigate("/experience")}
+          >
             Experience
           </button>
           <button className="nav-button" onClick={() => navigate("/education")}>

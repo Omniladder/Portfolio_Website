@@ -1,83 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@600&family=Rokkitt:ital,wght@1,300&family=Rubik:ital,wght@0,746;1,746&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@600&family=Rokkitt:ital,wght@1,300&family=Rubik:ital,wght@0,746;1,746&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap");
 
-.header-container{
-    background-color: #A61C3C;
-    margin-bottom: 16px;
-    box-shadow: 0 16px 0 #A61C3C;
-    text-align: center;
+.header-container {
+  background-color: #a61c3c;
+  margin-bottom: 16px;
+  box-shadow: 0 16px 0 #a61c3c;
+  text-align: center;
 }
 
-.title{
-    font-family: 'Rubik', sans-serif;
-    font-size: 3vw;
-    font-weight: 600;
-    color: #D8D78F;
-    margin-bottom: 2px;
+.title {
+  font-family: "Rubik", sans-serif;
+  font-size: 3vw;
+  font-weight: 600;
+  color: #d8d78f;
+  margin-bottom: 2px;
 }
 
-.quote{
-    color: #FF9B71;
-    font-family: "Sanchez", serif;
-    font-style: italic;
-    text-align: center;
-    font-size: 13px;
-    max-width: 600px;
-    margin: auto;
+.quote {
+  color: #ff9b71;
+  font-family: "Sanchez", serif;
+  font-style: italic;
+  text-align: center;
+  font-size: 13px;
+  max-width: 600px;
+  margin: auto;
 }
 
 .nav-bar {
-    width: 100%; /* Make the bar span the full width of the screen */
-    height: 7vh; /* Set the height of the bar */
-    background-color: #3D405B; /* Change this to any color you want */
-    border-top: 4px solid #252636;
-    border-bottom: 4px solid #252636;
-    display: flex;
+  width: 100%; /* Make the bar span the full width of the screen */
+  height: 7vh; /* Set the height of the bar */
+  background-color: #3d405b; /* Change this to any color you want */
+  border-top: 4px solid #252636;
+  border-bottom: 4px solid #252636;
+  display: flex;
 }
 
-.logo{
-    margin-left: 3vw;
-    border: 5px solid #208AAE;
-    height: 2.5vh - 8px;
-    width: 2.5vh - 8px;
-    border-radius: 50%;
-    cursor: pointer;
+.logo {
+  margin-left: 3vw;
+  border: 5px solid #208aae;
+  height: 2.5vh - 8px;
+  width: 2.5vh - 8px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-.nav-buttons{
-    margin-left: auto;
-    margin-right: 6vh;
+.nav-buttons {
+  margin-left: auto;
+  margin-right: 6vh;
 }
 
-.nav-button{
-    height: 7vh;
-    width: 120px;
-    background-color: #3D405B;
+.nav-button {
+  height: 7vh;
+  width: 120px;
+  background-color: #3d405b;
 
-    border: 4px solid #3D405B;
-    border-radius: 23px;
-    border-width: 4px;
+  border: 4px solid #3d405b;
+  border-radius: 23px;
+  border-width: 4px;
 
-    transition: border-color .25s ease;
+  transition: border-color 0.25s ease;
 
-    color: #D8D78F;
+  color: #d8d78f;
 
-    /*TODO FIX THIS FONT*/
-    font-size: 18px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
+  /*TODO FIX THIS FONT*/
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
 
-    margin-left: 8px;
-    
+  margin-left: 8px;
 }
-
 
 .nav-button:hover {
-    border: 7px solid #4b4e70;
-    cursor: pointer;
+  border: 7px solid #4b4e70;
+  cursor: pointer;
 }
 
 .nav-button:active {
-    background-color: #4b4e70;
+  background-color: #4b4e70;
 }

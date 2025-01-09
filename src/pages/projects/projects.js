@@ -57,14 +57,19 @@ import cppLogo from "../../pics/C++Logo.png";
 import cLogo from "../../pics/cLogo.png";
 import openGLLogo from "../../pics/opeglLogo.png";
 
-export function projects() {
+export function Projects() {
   register();
 
   return (
     <div className="App">
       <header>
         <div>
-          <WebHeader title={"Projects"} quote={"The purpose of life is not to be happy but to be productive, to be an achiever, and to achieve your own happiness through your own efforts."} />
+          <WebHeader
+            title={"Projects"}
+            quote={
+              "The purpose of life is not to be happy but to be productive, to be an achiever, and to achieve your own happiness through your own efforts."
+            }
+          />
         </div>
       </header>
       <div className="projects-body">
@@ -191,8 +196,7 @@ export function projects() {
               title="Graphics Library"
               quote="A Low Level Graphics Framework"
               image={graphics}
-              background="
-Starting in my freshman year of college, I embarked on developing an extensive graphics library from the ground up in C++. This project was inspired by the graphical programming I had done in high school using tools like Processing. To accomplish this, I had to relearn concepts such as trigonometry, basic linear algebra, and low-level programming concepts like buffers, VAOs, and VBOs, which were quite new to me at the time. The library includes complex geometric algorithms, such as ear clipping, and supports class objects like polygons and features like textures. Earlier versions also supported 3D graphics, though several iterations were required as I updated the library to replace deprecated functions."
+              background="Starting in my freshman year of college, I embarked on developing an extensive graphics library from the ground up in C++. This project was inspired by the graphical programming I had done in high school using tools like Processing. To accomplish this, I had to relearn concepts such as trigonometry, basic linear algebra, and low-level programming concepts like buffers, VAOs, and VBOs, which were quite new to me at the time. The library includes complex geometric algorithms, such as ear clipping, and supports class objects like polygons and features like textures. Earlier versions also supported 3D graphics, though several iterations were required as I updated the library to replace deprecated functions."
               github="https://github.com/Omniladder/Graphical_Project/"
               tech1={cppLogo}
               tech2={openGLLogo}

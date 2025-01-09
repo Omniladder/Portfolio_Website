@@ -57,7 +57,8 @@ const celiteCardProps = {
   title: "Celite",
   quote: "A Cellular Automata Simulator",
   image: cellular,
-  background: "Celite is a website developed over 12 months, designed to provide a user-friendly experience for mathematicians and enthusiasts to explore elementary cellular automata. It has been used to create visuals for new textbooks and courses, supporting undergraduate research projects. Built by a team of three, including myself, during two advanced computer science courses, the project was guided by university professors. Celite is set to be presented at Salisbury University's SUSRC Research Conference, showcasing its impact on education and research.",
+  background:
+    "Celite is a website developed over 12 months, designed to provide a user-friendly experience for mathematicians and enthusiasts to explore elementary cellular automata. It has been used to create visuals for new textbooks and courses, supporting undergraduate research projects. Built by a team of three, including myself, during two advanced computer science courses, the project was guided by university professors. Celite is set to be presented at Salisbury University's SUSRC Research Conference, showcasing its impact on education and research.",
   github: "https://github.com/ktranfaglia1/Celite",
   webLink: "https://celite.org/",
   downloadFile: null,
@@ -156,7 +157,9 @@ export function ProjectSlider() {
                   lambdaOpen();
                 }}
               >
-                <LargeCard {...{ ...lambdaCardProps, initalOpen: true }}></LargeCard>
+                <LargeCard
+                  {...{ ...lambdaCardProps, initalOpen: true }}
+                ></LargeCard>
               </div>
             ) : null
           }
@@ -172,7 +175,9 @@ export function ProjectSlider() {
                   celiteOpen();
                 }}
               >
-                <LargeCard {...{ ...celiteCardProps, initalOpen: true }}></LargeCard>
+                <LargeCard
+                  {...{ ...celiteCardProps, initalOpen: true }}
+                ></LargeCard>
               </div>
             ) : null
           }
@@ -188,7 +193,9 @@ export function ProjectSlider() {
                   wantsOpen();
                 }}
               >
-                <LargeCard {...{ ...wantsCardProps, initalOpen: true }}></LargeCard>
+                <LargeCard
+                  {...{ ...wantsCardProps, initalOpen: true }}
+                ></LargeCard>
               </div>
             ) : null
           }
@@ -204,7 +211,9 @@ export function ProjectSlider() {
                   testOpen();
                 }}
               >
-                <LargeCard {...{ ...testCardProps, initalOpen: true }}></LargeCard>
+                <LargeCard
+                  {...{ ...testCardProps, initalOpen: true }}
+                ></LargeCard>
               </div>
             ) : null
           }
