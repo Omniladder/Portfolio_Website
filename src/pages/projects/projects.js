@@ -1,5 +1,5 @@
 import "./projects.css";
-import React, { useState } from "react";
+import React from "react";
 
 //These are the internally created components created for this program
 import WebHeader from "../../components/header/header.js";
@@ -13,6 +13,15 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 import { SmallCard } from "../../components/smallCard/smallCard.js";
+
+/**
+ * Image Imports
+ *    Section 1:
+ *      Card Pictures
+ *
+ *      Section 2:
+ *        Technology Logos
+ */
 
 // These are the imports for images used in large project sliders
 import haskell from "../../pics/haskell.jpeg";
