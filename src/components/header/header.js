@@ -2,6 +2,8 @@ import React from "react";
 import logo from "../../pics/logo.png";
 import { useNavigate } from "react-router-dom";
 
+import PropTypes from "prop-types";
+
 import "./header.css";
 
 function WebHeader({ title, quote }) {
@@ -10,7 +12,7 @@ function WebHeader({ title, quote }) {
     <header className="header">
       <div className="header-container">
         <div className="title">{title}</div>
-        <div className="quote">"{quote}"</div>
+        <div className="quote">{quote}</div>
       </div>
       <div className="nav-bar">
         <img
@@ -43,5 +45,10 @@ function WebHeader({ title, quote }) {
     </header>
   );
 }
+
+WebHeader.propTypes = {
+  title: PropTypes.string,
+  quote: PropTypes.string,
+};
 
 export default WebHeader;

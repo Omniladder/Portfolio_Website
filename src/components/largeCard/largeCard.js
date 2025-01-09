@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 
+import PropTypes from "prop-types";
+
 import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 import { motion } from "framer-motion";
@@ -31,7 +33,7 @@ export function LargeCard({
   tech6,
   initalOpen = true,
 }) {
-  const [iscardopened, setCardOpened] = useState(initalOpen);
+  const [iscardopened] = useState(initalOpen);
   //const [cardPosition, setCardPosition] = useState({ width: '30vw', height: '35vw' });
 
   const handleDivClick = (event) => {
@@ -57,7 +59,7 @@ export function LargeCard({
         layout
         sx={{
           //CSS Styling
-          zIndex: 10,
+
           backgroundColor: "#A61C3C",
           borderRadius: "10%",
           border: "5px solid black",
@@ -192,3 +194,20 @@ export function LargeCard({
     </div>
   );
 }
+
+LargeCard.propTypes = {
+  title: PropTypes.string,
+  quote: PropTypes.string,
+  image: PropTypes.string,
+  background: PropTypes.string,
+  github: PropTypes.string,
+  webLink: PropTypes.string,
+  downloadFile: PropTypes.string,
+  tech1: PropTypes.string,
+  tech2: PropTypes.string,
+  tech3: PropTypes.string,
+  tech4: PropTypes.string,
+  tech5: PropTypes.string,
+  tech6: PropTypes.string,
+  initalOpen: PropTypes.bool,
+};

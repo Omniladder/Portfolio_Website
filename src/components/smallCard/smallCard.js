@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 
+import PropTypes from "prop-types";
+
 import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 import { motion } from "framer-motion";
@@ -199,3 +201,20 @@ export function SmallCard({
     </div>
   );
 }
+
+SmallCard.propTypes = {
+  title: PropTypes.string,
+  quote: PropTypes.string,
+  image: PropTypes.string,
+  background: PropTypes.string,
+  github: PropTypes.string,
+  webLink: PropTypes.string,
+  downloadFile: PropTypes.string,
+  tech1: PropTypes.string,
+  tech2: PropTypes.string,
+  tech3: PropTypes.string,
+  tech4: PropTypes.string,
+  tech5: PropTypes.string,
+  tech6: PropTypes.string,
+  initalOpen: PropTypes.bool,
+};

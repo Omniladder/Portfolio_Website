@@ -1,3 +1,4 @@
+import React from "react";
 import "./education.css";
 import WebHeader from "../../components/header/header.js";
 
@@ -6,10 +7,18 @@ function projects() {
     <div className="App">
       <header className="header">
         <div>
-          <WebHeader title={"Education"} quote={"Education is not the means of showing people how to get what they want. Education is an exercise by means of which enough men, it is hoped, will learn to want what is worth having."} />
+          <WebHeader
+            title={"Education"}
+            quote={
+              "Education is not the means of showing people how to get what they want. Education is an exercise by means of which enough men, it is hoped, will learn to want what is worth having."
+            }
+          />
         </div>
       </header>
-      <body className=""></body>
+      <body className="">
+        <hr className="horizonBar" />
+        <div className="transcriptRegion"></div>
+      </body>
     </div>
   );
 }
