@@ -1,0 +1,24 @@
+.courseDiv {
+  display: flex;
+  color: #d8d78f;
+  font-weight: 600;
+  font-family: "Rubik", sans-serif;
+  font-size: 2.5vw;
+}
+
+.courseName {
+  margin-left: 1.5vw;
+}
+
+.gradeDiv {
+  background-color: #4b4e70;
+  border: 5px solid #252636;
+  height: 3vw;
+  aspect-ratio: 1/1;
+  border-radius: 15px;
+  text-align: center;
+  color: #d8d78f;
+  font-weight: 600;
+  font-family: "Rubik", sans-serif;
+  font-size: 2.5vw;
+}

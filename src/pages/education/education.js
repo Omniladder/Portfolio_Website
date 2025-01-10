@@ -56,6 +56,11 @@ function projects() {
         <div className="transcriptRegion">
           <div className="marginBox"></div>
           <div className="transcriptTitle">Transcript:</div>
+
+          <div className="semesterTranscript">
+            <div className="semesterName">Fall 2021:</div>
+            <div className="semesterClasses"></div>
+          </div>
         </div>
       </body>
     </div>
