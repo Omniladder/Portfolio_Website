@@ -2,6 +2,8 @@ import React from "react";
 import "./education.css";
 import WebHeader from "../../components/header/header.js";
 
+import salisbury from "../../pics/salisburyBuilding.jpg";
+
 function projects() {
   return (
     <div className="App">
@@ -16,8 +18,45 @@ function projects() {
         </div>
       </header>
       <body className="">
-        <hr className="horizonBar" />
-        <div className="transcriptRegion"></div>
+        <div className="infoSection">
+          <div className="infoCard">
+            <div className="sectionDiv">
+              <div className="sectionHead">School:</div>
+              <div className="sectionContent">Salisbury University</div>
+            </div>
+            <div className="sectionDiv">
+              <div className="sectionHead">Degree:</div>
+              <div className="sectionContent">Bachelor of Science</div>
+            </div>
+            <div className="sectionDiv">
+              <div className="sectionHead">Major:</div>
+              <div className="sectionContent">
+                Computer Science & Data Science
+              </div>
+            </div>
+            <div className="sectionDiv">
+              <div className="sectionHead">Concentrations:</div>
+              <div className="sectionContent">
+                Software Engineering & Foundations, Algorithms and Artificial
+                Intelligence
+              </div>
+            </div>
+            <div className="sectionDiv">
+              <div className="sectionHead">GPA:</div>
+              <div className="sectionContent">3.589</div>
+            </div>
+            <div className="sectionDiv">
+              <div className="sectionHead">Minor:</div>
+              <div className="sectionContent">Mathematics</div>
+            </div>
+          </div>
+          <img className="salisburyPhoto" src={salisbury}></img>
+        </div>
+        <hr className="horizonBar" style={{ marginBottom: "0vw" }} />
+        <div className="transcriptRegion">
+          <div className="marginBox"></div>
+          <div className="transcriptTitle">Transcript:</div>
+        </div>
       </body>
     </div>
   );

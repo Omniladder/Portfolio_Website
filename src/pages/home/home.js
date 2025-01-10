@@ -1,3 +1,4 @@
+import React from "react";
 import me from "../../pics/dustin.png";
 
 import "./home.css";
@@ -15,13 +16,13 @@ function home() {
         </div>
       </header>
       <body className="App-header">
-        <div class="me-container">
+        <div className="me-container">
           <img src={me} className="self-picture" alt="self" />
-          <div class="text-container">
-            <div class="name-container">Hi I'm</div>
-            <div class="name-container">Dustin O'Brien</div>
-            <div class="major-container">Computer Science Major</div>
-            <div class="major-container">Data Science Major</div>
+          <div className="text-container">
+            <div className="name-container">Hi I&apos;m</div>
+            <div className="name-container">Dustin O&apos;Brien</div>
+            <div className="major-container">Computer Science Major</div>
+            <div className="major-container">Data Science Major</div>
           </div>
         </div>
       </body>

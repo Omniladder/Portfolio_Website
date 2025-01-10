@@ -12,7 +12,7 @@ function WebHeader({ title, quote }) {
     <header className="header">
       <div className="header-container">
         <div className="title">{title}</div>
-        <div className="quote">{quote}</div>
+        <div className="quote">&quot;{quote}&quot;</div>
       </div>
       <div className="nav-bar">
         <img
