@@ -10,7 +10,14 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-export function ClassDrop({ grade, courseName, courseID }) {
+export function ClassDrop({
+  grade,
+  courseName,
+  courseID,
+  courseDescription,
+  professor,
+  numCredits,
+}) {
   return (
     <Accordion
       sx={{
@@ -28,7 +35,28 @@ export function ClassDrop({ grade, courseName, courseID }) {
           <div className="courseName">{courseName}</div>
         </div>
       </AccordionSummary>
-      <AccordionDetails>Content</AccordionDetails>
+      <AccordionDetails>
+        <div className="courseDescription">
+          <div className="sectionTitle">Course Description:</div>
+          <div className="sectionContent">{courseDescription}</div>
+        </div>
+
+        <div className="courseDetails">
+          <div className="courseFact">
+            <div className="factTitle">Course ID:</div>
+            <div className="factInfo">{courseID}</div>
+          </div>
+          <div className="courseFact">
+            <div className="factTitle">Professor:</div>
+            <div className="factInfo">{professor}</div>
+          </div>
+
+          <div className="courseFact">
+            <div className="factTitle"># of Credits:</div>
+            <div className="factInfo">{numCredits}</div>
+          </div>
+        </div>
+      </AccordionDetails>
     </Accordion>
   );
 }
@@ -37,4 +65,7 @@ ClassDrop.propTypes = {
   grade: PropTypes.string,
   courseName: PropTypes.string,
   courseID: PropTypes.string,
+  courseDescription: PropTypes.string,
+  professor: PropTypes.string,
+  numCredits: PropTypes.number,
 };
