@@ -40,6 +40,7 @@
 
 .sectionContent {
   color: #ff9b71;
+  font-size: 0.8vw;
 }
 
 .sectionHead {
@@ -84,10 +85,16 @@
   margin-left: 2vw;
 }
 
+.semesterDiv {
+  margin-bottom: 4vw;
+}
+
 .semesterTranscript {
   text-align: left;
   margin-left: 3vw;
   margin-top: 2vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .semesterName {
@@ -95,4 +102,10 @@
   font-family: "Rubik", sans-serif;
   font-size: 1.2vw;
   font-weight: 600;
+  margin-bottom: 0.8vw;
+}
+
+.nothingDiv {
+  height: 5vw;
+  background-color: #a61c3c;
 }

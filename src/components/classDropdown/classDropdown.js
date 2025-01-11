@@ -24,7 +24,7 @@ export function ClassDrop({
         backgroundColor: "#191b2e",
         border: "3.5px solid #4b4e70;",
 
-        width: "50vw",
+        width: "38vw",
       }}
     >
       <AccordionSummary
