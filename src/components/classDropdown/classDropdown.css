@@ -20,7 +20,7 @@
   margin-top: 0.5vw;
 }
 
-.sectionTitle {
+.courseTitle {
   color: #d8d78f;
   font-size: 1.1vw;
   font-family: "Rubik", sans-serif;
@@ -29,7 +29,7 @@
   text-indent: 1vw;
 }
 
-.sectionContent {
+.courseContent {
   text-align: justify;
   font-size: 0.9vw;
   color: #a4a6c6;

@@ -37,8 +37,8 @@ export function ClassDrop({
       </AccordionSummary>
       <AccordionDetails>
         <div className="courseDescription">
-          <div className="sectionTitle">Course Description:</div>
-          <div className="sectionContent">{courseDescription}</div>
+          <div className="courseTitle">Course Description:</div>
+          <div className="courseContent">{courseDescription}</div>
         </div>
 
         <div className="courseDetails">
