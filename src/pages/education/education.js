@@ -299,7 +299,7 @@ function projects() {
             </div>
 
             <div className="semesterDiv">
-              <div className="semesterName">Spring 2025:</div>
+              <div className="semesterName">Fall 2024:</div>
               <div className="semesterClasses">
                 <ClassDrop
                   grade="A"
@@ -344,7 +344,7 @@ function projects() {
               </div>
             </div>
             <div className="semesterDiv">
-              <div className="semesterName">Fall 2024:</div>
+              <div className="semesterName">Spring 2025:</div>
               <div className="semesterClasses">
                 <ClassDrop
                   grade=""
