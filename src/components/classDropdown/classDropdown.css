@@ -14,11 +14,10 @@
   border: 5px solid #252636;
   border-radius: 25px;
   text-indent: 0.8vw;
-  margin: 1vw;
 }
 
 .courseDetails {
-  margin-top: 1.2vw;
+  margin-top: 0.5vw;
 }
 
 .sectionTitle {
@@ -41,19 +40,20 @@
 
 .courseName {
   margin-left: 1.5vw;
+  font-size: 1.5vw;
 }
 
 .gradeDiv {
   background-color: #4b4e70;
-  border: 5px solid #252636;
-  height: 3vw;
+  border: 3px solid #252636;
+  height: 1.5vw;
   aspect-ratio: 1/1;
-  border-radius: 15px;
+  border-radius: 5px;
   text-align: center;
   color: #d8d78f;
   font-weight: 600;
   font-family: "Rubik", sans-serif;
-  font-size: 2.5vw;
+  font-size: 1.3vw;
 }
 
 .courseFact {
@@ -61,7 +61,7 @@
   background-color: #4b4e70;
   border-radius: 10px;
   margin-bottom: 1vw;
-  width: 25vw;
+  width: 23vw;
   height: 2vw;
   align-items: center;
   float: left;

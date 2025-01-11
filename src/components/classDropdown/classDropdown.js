@@ -22,8 +22,8 @@ export function ClassDrop({
     <Accordion
       sx={{
         backgroundColor: "#191b2e",
-        border: "6px solid #4b4e70;",
-        borderRadius: "20px !important",
+        border: "3.5px solid #4b4e70;",
+
         width: "50vw",
       }}
     >
