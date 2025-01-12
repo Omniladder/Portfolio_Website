@@ -7,7 +7,7 @@ import {
   Timeline,
   TimelineItem,
   TimelineSeparator,
-  TimelineContent,
+  TimelineConnector,
   TimelineDot,
 } from "@mui/lab";
 
@@ -27,10 +27,61 @@ export function Experience() {
       <body className="">
         <center>
           <Timeline>
-            <TimelineDot variant="outlined" sx={{ borderColor: "#208aae" }} />
-            <TimelineDot variant="outlined" sx={{ borderColor: "#208aae" }} />
-            <TimelineDot variant="outlined" sx={{ borderColor: "#208aae" }} />
-            <TimelineDot variant="outlined" sx={{ borderColor: "#208aae" }} />
+            <TimelineItem>
+              <TimelineSeparator>
+                <TimelineDot
+                  variant="outlined"
+                  sx={{
+                    borderColor: "#208aae",
+                    borderWidth: ".6vw",
+                    height: ".8vw",
+                    aspectRatio: 1 / 1,
+                  }}
+                />
+                <TimelineConnector sx={{ height: "20vh" }} />
+              </TimelineSeparator>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineSeparator>
+                <TimelineDot
+                  variant="outlined"
+                  sx={{
+                    borderColor: "#208aae",
+                    borderWidth: ".6vw",
+                    height: ".8vw",
+                    aspectRatio: 1 / 1,
+                  }}
+                />
+                <TimelineConnector sx={{ height: "20vh" }} />
+              </TimelineSeparator>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineSeparator>
+                <TimelineDot
+                  variant="outlined"
+                  sx={{
+                    borderColor: "#208aae",
+                    borderWidth: ".6vw",
+                    height: ".8vw",
+                    aspectRatio: 1 / 1,
+                  }}
+                />
+                <TimelineConnector sx={{ height: "20vh" }} />
+              </TimelineSeparator>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineSeparator>
+                <TimelineDot
+                  variant="outlined"
+                  sx={{
+                    borderColor: "#208aae",
+                    borderWidth: ".6vw",
+                    height: ".8vw",
+                    aspectRatio: 1 / 1,
+                  }}
+                />
+              </TimelineSeparator>
+            </TimelineItem>
           </Timeline>
         </center>
       </body>
