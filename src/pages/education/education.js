@@ -6,7 +6,7 @@ import salisbury from "../../pics/salisburyBuilding.jpg";
 
 import { ClassDrop } from "../../components/classDropdown/classDropdown";
 
-function projects() {
+export function Education() {
   return (
     <div className="App">
       <header className="header">
@@ -396,5 +396,3 @@ function projects() {
     </div>
   );
 }
-
-export default projects;

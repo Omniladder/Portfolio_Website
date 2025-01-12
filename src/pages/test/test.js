@@ -4,7 +4,7 @@ import React from "react";
 
 import { ClassDrop } from "../../components/classDropdown/classDropdown";
 
-function Test() {
+export function Test() {
   return (
     <div className="App">
       <center>
@@ -44,5 +44,3 @@ function Test() {
     </div>
   );
 }
-
-export default Test;

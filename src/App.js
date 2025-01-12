@@ -8,12 +8,12 @@ import {
 } from "react-router-dom";
 
 //Page imports
-import Home from "./pages/home/home";
+import { Home } from "./pages/home/home";
 import { Projects } from "./pages/projects/projects";
-import Experience from "./pages/experience/experience";
-import Education from "./pages/education/education";
-import About from "./pages/about/about";
-import Test from "./pages/test/test";
+import { Experience } from "./pages/experience/experience";
+import { Education } from "./pages/education/education";
+import { About } from "./pages/about/about";
+import { Test } from "./pages/test/test";
 
 function App() {
   return (

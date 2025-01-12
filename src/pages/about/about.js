@@ -1,7 +1,7 @@
 import "./about.css";
 import WebHeader from "../../components/header/header.js";
 
-function projects() {
+export function About() {
   return (
     <div className="App">
       <header className="header">
@@ -19,4 +19,4 @@ function projects() {
   );
 }
 
-export default projects;
+export default About;

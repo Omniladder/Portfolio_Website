@@ -4,7 +4,7 @@ import me from "../../pics/dustin.png";
 import "./home.css";
 import WebHeader from "../../components/header/header.js";
 
-function home() {
+export function Home() {
   return (
     <div className="App">
       <header className="header">
@@ -29,5 +29,3 @@ function home() {
     </div>
   );
 }
-
-export default home;

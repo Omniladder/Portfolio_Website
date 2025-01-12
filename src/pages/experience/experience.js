@@ -1,7 +1,17 @@
+import React from "react";
 import "./experience.css";
 import WebHeader from "../../components/header/header.js";
 
-function projects() {
+//Timeline Imports
+import {
+  Timeline,
+  TimelineItem,
+  TimelineSeparator,
+  TimelineContent,
+  TimelineDot,
+} from "@mui/lab";
+
+export function Experience() {
   return (
     <div className="App">
       <header className="header">
@@ -14,9 +24,16 @@ function projects() {
           />
         </div>
       </header>
-      <body className=""></body>
+      <body className="">
+        <center>
+          <Timeline>
+            <TimelineDot variant="outlined" sx={{ borderColor: "#208aae" }} />
+            <TimelineDot variant="outlined" sx={{ borderColor: "#208aae" }} />
+            <TimelineDot variant="outlined" sx={{ borderColor: "#208aae" }} />
+            <TimelineDot variant="outlined" sx={{ borderColor: "#208aae" }} />
+          </Timeline>
+        </center>
+      </body>
     </div>
   );
 }
-
-export default projects;
