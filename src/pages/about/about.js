@@ -1,4 +1,5 @@
 import "./about.css";
+import React from "react";
 import WebHeader from "../../components/header/header.js";
 
 export function About() {
