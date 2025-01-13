@@ -382,7 +382,7 @@ export function Education() {
                 <ClassDrop
                   grade="B"
                   courseName="World Civilizations I"
-                  courseDescription=""
+                  courseDescription="Examination of global progress in major civilizations from prehistoric times to the present emphasizing the economic, social, cultural, intellectual and political trends motivating human beings."
                   courseID="HIST-101"
                   professor="Dr. Kevin Birch"
                   numCredits={4}
