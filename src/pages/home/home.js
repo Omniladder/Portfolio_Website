@@ -8,6 +8,7 @@ export function Home() {
   return (
     <div className="App">
       <header className="header">
+        <meta name="msvalidate.01" content="BC700C97EF00D2AED1CC5FA678CB4BD7" />
         <div>
           <WebHeader
             title={"Home"}

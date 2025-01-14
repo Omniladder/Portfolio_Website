@@ -34,7 +34,14 @@
 .projectGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 4 columns */
-  gap: 10px;
+  gap: 1vw;
   row-gap: 4vw;
   margin-top: 2vw;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  /* CSS rules for when height is greater than width */
+  .projectGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
