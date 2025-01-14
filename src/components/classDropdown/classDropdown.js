@@ -10,6 +10,8 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
+import { useMediaQuery } from "react-responsive";
+
 export function ClassDrop({
   grade,
   courseName,

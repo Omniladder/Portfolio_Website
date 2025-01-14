@@ -109,3 +109,10 @@
   height: 5vw;
   background-color: #a61c3c;
 }
+
+@media (max-aspect-ratio: 1/1) {
+  /* CSS rules for when height is greater than width */
+  .semesterTranscript {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

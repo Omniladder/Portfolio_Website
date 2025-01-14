@@ -16,14 +16,12 @@
 .self-picture {
   pointer-events: none;
   border-radius: 1000px;
-  height: 50vw;
+  width: 30vw;
+  height: 30vw;
   aspect-ratio: 1/1;
   object-fit: cover;
   object-position: center top;
   border: 1vw solid #208aae;
-  width: 50vw;
-  max-width: 500px;
-  max-height: 500px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -65,7 +63,7 @@
 @media (max-aspect-ratio: 1/1) {
   /* CSS rules for when height is greater than width */
   .nav-button {
-    font-size: 1.3vw;
+    font-size: 1vw;
     font-weight: 500;
   }
   .nav-buttons {
@@ -87,6 +85,8 @@
     text-align: center;
   }
   .self-picture {
-    border: 2vw solid #208aae;
+    width: 50vw;
+    height: 50vw;
+    border: 1.5vw solid #208aae;
   }
 }
