@@ -10,7 +10,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-import { useMediaQuery } from "react-responsive";
+import { useMediaQuery } from "@mui/material";
 
 export function ClassDrop({
   grade,
@@ -20,13 +20,14 @@ export function ClassDrop({
   professor,
   numCredits,
 }) {
+  const isScreenSmall = useMediaQuery("(max-aspect-ratio: 1/1)");
   return (
     <Accordion
       sx={{
         backgroundColor: "#191b2e",
         border: "3.5px solid #4b4e70;",
 
-        width: "38vw",
+        width: isScreenSmall ? "90vw" : "38vw",
       }}
     >
       <AccordionSummary

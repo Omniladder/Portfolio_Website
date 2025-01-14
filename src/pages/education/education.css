@@ -25,7 +25,7 @@
   background-color: #a61c3c;
   width: 50vw;
   height: 20vw;
-  border-radius: 50px;
+  border-radius: 5vw;
   border: 5px solid #61dafb;
   margin-top: 2vw;
   margin-left: 5vw;
@@ -114,5 +114,29 @@
   /* CSS rules for when height is greater than width */
   .semesterTranscript {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .semesterName {
+    font-size: 4vw;
+  }
+  .transcriptTitle {
+    font-size: 9vw;
+  }
+  .salisburyPhoto {
+    display: none;
+  }
+  .infoCard {
+    margin-top: 5vw;
+    width: 85vw;
+    height: 48vw;
+  }
+  .sectionHead {
+    font-size: 4vw;
+  }
+
+  .sectionContent {
+    font-size: 2.3vw;
+  }
+  .infoSection {
+    height: 60vw;
   }
 }
