@@ -2,6 +2,12 @@ import React from "react";
 import "./experience.css";
 import WebHeader from "../../components/header/header.js";
 
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+
 export function Experience() {
   return (
     <div className="App">
@@ -15,7 +21,11 @@ export function Experience() {
           />
         </div>
       </header>
-      <body className=""></body>
+      <body className="">
+        <VerticalTimeline>
+          <VerticalTimelineElement></VerticalTimelineElement>
+        </VerticalTimeline>
+      </body>
     </div>
   );
 }
