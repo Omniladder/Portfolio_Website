@@ -198,7 +198,7 @@ export function Experience() {
             />
           >
             <h3 className="vertical-timeline-element-title">
-              Math & Computer Science Tutor
+              Computer Science Tutor
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
               Salisbury, MD
