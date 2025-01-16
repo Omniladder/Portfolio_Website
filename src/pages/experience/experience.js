@@ -230,9 +230,9 @@ export function Experience() {
               Baltimore, MD
             </h4>
             <p>
-              Given enjoyment of UD's Henhacks I teamed up with another group of
-              Salisbury Students to attend UMBC&apos;s HackUMBC for this
-              hackathon we worked on a project oriented towards the
+              Given enjoyment of UD&apos;s Henhacks I teamed up with another
+              group of Salisbury Students to attend UMBC&apos;s HackUMBC for
+              this hackathon we worked on a project oriented towards the
               University&apos;s Education Hack and ML/AI Hack and created
               Testif.AI a test creation API built using modern LLM technology.
               The project won both Best Education Hack as well as Second Best
