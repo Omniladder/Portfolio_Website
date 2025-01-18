@@ -38,7 +38,7 @@ export function Experience() {
             icon=<img
               src={SchoolIcon}
               style={{ width: "45px", marginTop: "3px" }}
-              alt="School Icon"
+              className="XPLogo"
             />
           >
             <h3 className="vertical-timeline-element-title">
@@ -64,7 +64,7 @@ export function Experience() {
             icon=<img
               src={SchoolIcon}
               style={{ width: "45px", marginTop: "3px" }}
-              alt="School Icon"
+              className="XPLogo"
             />
           >
             <h3 className="vertical-timeline-element-title">Begun College</h3>
@@ -87,7 +87,7 @@ export function Experience() {
             icon=<img
               src={WorkIcon}
               style={{ width: "45px", marginTop: "3px" }}
-              alt="School Icon"
+              className="XPLogo"
             />
           >
             <h3 className="vertical-timeline-element-title">
@@ -113,7 +113,7 @@ export function Experience() {
             icon=<img
               src={hackLogo}
               style={{ width: "45px", marginTop: "3px" }}
-              alt="School Icon"
+              className="XPLogo"
             />
           >
             <h3 className="vertical-timeline-element-title">
@@ -138,7 +138,7 @@ export function Experience() {
             icon=<img
               src={WorkIcon}
               style={{ width: "45px", marginTop: "3px" }}
-              alt="School Icon"
+              className="XPLogo"
             />
           >
             <h3 className="vertical-timeline-element-title">
@@ -165,7 +165,7 @@ export function Experience() {
             icon=<img
               src={WorkIcon}
               style={{ width: "45px", marginTop: "3px" }}
-              alt="School Icon"
+              className="XPLogo"
             />
           >
             <h3 className="vertical-timeline-element-title">
@@ -194,7 +194,11 @@ export function Experience() {
             icon=<img
               src={WorkIcon}
               style={{ width: "45px", marginTop: "3px" }}
-              alt="School Icon"
+              icon=<img
+                src={hackLogo}
+                style={{ width: "45px", marginTop: "3px" }}
+                className="XPLogo"
+              />
             />
           >
             <h3 className="vertical-timeline-element-title">
@@ -220,7 +224,7 @@ export function Experience() {
             icon=<img
               src={hackLogo}
               style={{ width: "45px", marginTop: "3px" }}
-              alt="School Icon"
+              className="XPLogo"
             />
           >
             <h3 className="vertical-timeline-element-title">
@@ -245,7 +249,7 @@ export function Experience() {
             icon=<img
               src={endIcon}
               style={{ width: "45px", marginTop: "3px" }}
-              alt="School Icon"
+              className="XPLogo"
             />
           ></VerticalTimelineElement>
         </VerticalTimeline>

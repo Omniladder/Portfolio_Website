@@ -57,7 +57,8 @@
 
 .linkDivHead {
   margin-left: 2vw;
-  margin-bottom: 0.3vw;
+  margin-bottom: 0vw;
+  margin-top: 0vw;
 }
 
 .linkHead {
@@ -74,7 +75,8 @@
 
 .linkContainer {
   margin-left: 2vw;
-  margin-top: 0.2vw;
+  margin-top: 0vw;
+  gap: 0vw;
 }
 
 .downloadsDiv {
