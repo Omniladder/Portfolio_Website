@@ -46,7 +46,54 @@ export function About() {
               projects section.
             </p>
           </div>
-          <img src={dustin} className="mathPhoto"></img>
+          <div className="picture-link-div">
+            <img src={dustin} className="mathPhoto"></img>
+            <div className="personalDiv">
+              <div className="linkDivHead">Links:</div>
+              <div className="linkContainer">
+                <div className="linkHead">Github: </div>
+                <div className="linkArea">
+                  <a href="https://github.com/Omniladder" className="hyperlink">
+                    Click for Link
+                  </a>
+                </div>
+              </div>
+              <div className="linkContainer">
+                <div className="linkHead">LinkedIn: </div>
+                <div className="linkArea">
+                  <a
+                    href="https://www.linkedin.com/in/dustin-o-brien-7174a4267/"
+                    className="hyperlink"
+                  >
+                    Click for Link
+                  </a>
+                </div>
+              </div>
+              <div className="linkContainer">
+                <div className="linkHead">Email: </div>
+                <div className="linkArea">
+                  <a
+                    href="mailto:dustintobrien@gmail.com"
+                    className="hyperlink"
+                  >
+                    dustintobrien@gmail.com
+                  </a>
+                </div>
+              </div>
+              <div className="linkContainer">
+                <div className="linkHead">Resume: </div>
+                <div className="linkArea">
+                  <a
+                    className="hyperlink"
+                    href="./downloads/Resume-1.pdf"
+                    download
+                  >
+                    Download Resume
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="middleSection">
           <div className="skillDiv">
@@ -58,50 +105,6 @@ export function About() {
               <img src={gitLogo} className="skillDiv"></img>
               <img src={pythonLogo} className="skillDiv"></img>
               <img src={vanillaLogo} className="skillDiv"></img>
-            </div>
-          </div>
-        </div>
-        <div className="personalDiv">
-          <div className="linkDiv">
-            <div className="linkDivHead">Links:</div>
-            <div className="linkContainer">
-              <div className="linkHead">Github: </div>
-              <div className="linkArea">
-                <a href="https://github.com/Omniladder" className="hyperlink">
-                  Click for Link
-                </a>
-              </div>
-            </div>
-            <div className="linkContainer">
-              <div className="linkHead">LinkedIn: </div>
-              <div className="linkArea">
-                <a
-                  href="https://www.linkedin.com/in/dustin-o-brien-7174a4267/"
-                  className="hyperlink"
-                >
-                  Click for Link
-                </a>
-              </div>
-            </div>
-            <div className="linkContainer">
-              <div className="linkHead">Email: </div>
-              <div className="linkArea">
-                <a href="mailto:dustintobrien@gmail.com" className="hyperlink">
-                  dustintobrien@gmail.com
-                </a>
-              </div>
-            </div>
-            <div className="linkContainer">
-              <div className="linkHead">Resume: </div>
-              <div className="linkArea">
-                <a
-                  className="hyperlink"
-                  href="./downloads/Resume-1.pdf"
-                  download
-                >
-                  Download Resume
-                </a>
-              </div>
             </div>
           </div>
         </div>

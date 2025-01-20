@@ -42,7 +42,7 @@ export function Experience() {
             />
           >
             <h3 className="vertical-timeline-element-title">
-              Graduated Highschool
+              Graduated High School
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
               Ijamsville, MD
@@ -67,7 +67,7 @@ export function Experience() {
               className="XPLogo"
             />
           >
-            <h3 className="vertical-timeline-element-title">Begun College</h3>
+            <h3 className="vertical-timeline-element-title">Began College</h3>
             <h4 className="vertical-timeline-element-subtitle">
               Salisbury, MD
             </h4>

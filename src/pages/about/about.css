@@ -138,3 +138,33 @@
     209
   ); /* Changes color when hovered for better user experience */
 }
+
+@media (max-aspect-ratio: 1/1) {
+  .topBio {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .mathPhoto {
+    width: 40vw;
+    height: 40vw;
+  }
+  .picture-link-div {
+    justify-content: center;
+  }
+
+  .biographySection {
+    width: 70vw;
+    font-size: 2.5vw;
+    color: #d8d78f;
+  }
+  .bioHead {
+    font-size: 3.5vw;
+  }
+  .bioDiv {
+    margin-left: 10vw;
+    max-width: 80vw;
+    width: 80vw;
+    height: 60vw;
+  }
+}
