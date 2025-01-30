@@ -34,7 +34,7 @@ import pakistan from "../../pics/pakistan.png";
 import taylor from "../../pics/taylorSeries.png";
 import fifteen from "../../pics/fifteen.png";
 import graphics from "../../pics/graphics.png";
-import ascii from "../../pics/ascii.png";
+import Resumai from "../../pics/resumai.png";
 
 //Logo Imports
 import haskellLogo from "../../pics/haskellLogo.png";
@@ -64,7 +64,10 @@ import sympyLogo from "../../pics/sympyLogo.png";
 import pyqtLogo from "../../pics/pyqtLogo.jpeg";
 import cppLogo from "../../pics/C++Logo.png";
 import cLogo from "../../pics/cLogo.png";
+import spotifyLogo from "../../pics/spotifyLogo.png";
+import nextjsLogo from "../../pics/nextjsLogo.png";
 import openGLLogo from "../../pics/opeglLogo.png";
+import spotifyImage from "../../pics/SpotifyImage.png";
 
 export function Projects() {
   register();
@@ -177,6 +180,21 @@ export function Projects() {
             ></SmallCard>
 
             <SmallCard
+              title="Resumai"
+              quote="A NextJS Resume Platform"
+              image={Resumai}
+              background="Resumai was create for Georgetown HoyaHacks Hackathon 2025. With a Frontend built in Next.JS and a backend in python Resumeai includes many features relating to resumes built using Large Language Models and Generative AI Technology. This includes a Resume builder which takes your current resume and a job description passes it GPT to generate and then puts them into a Latex Resume Template which then compiles and is sent back to the user. It also contains an Application submission and Resume Querying software which takes a resume, breaks down the information inside of it and puts it into a series of vector databases which can then be queried based on a given prompt and return best candidates for the position."
+              github="https://github.com/SpencerPresley/HoyaHacks2025"
+              webLink="https://devpost.com/software/resume-hut"
+              tech1={pythonLogo}
+              tech2={nextjsLogo}
+              tech3={langchainLogo}
+              tech4={fastAPILogo}
+              tech5={GPTLogo}
+              tech6={pydanticLogo}
+            ></SmallCard>
+
+            <SmallCard
               title="Pakistan Analysis"
               quote="A Data-Driven Election Analysis"
               image={pakistan}
@@ -212,6 +230,17 @@ export function Projects() {
             ></SmallCard>
 
             <SmallCard
+              title="Spotify Album Gen"
+              quote="A Spotipy Album Image Generator"
+              image={spotifyImage}
+              background="Wanting to rank every song in my Spotify playlist into a tier list, I realized I needed unique images for each track. To automate this, I used the Spotipy library to retrieve my playlist and extract each song’s album cover URL. Using the requests library, I fetched the images and programmatically overlaid the song titles, creating visually distinct images for my tier list. This project streamlined the process, combining API integration and image processing to make the tier list both functional and visually engaging."
+              github="https://github.com/Omniladder/songImageGen"
+              tech1={spotifyLogo}
+              tech2={pythonLogo}
+              tech3={restLogo}
+            ></SmallCard>
+
+            <SmallCard
               title="Fifteen Puzzle"
               quote="An AI Backed Puzzle Game"
               image={fifteen}
@@ -219,15 +248,6 @@ export function Projects() {
               github="https://github.com/Omniladder/fifteenPuzzle"
               tech1={pythonLogo}
               tech2={pyqtLogo}
-            ></SmallCard>
-
-            <SmallCard
-              title="ASCII Art Maker"
-              quote="A Simple Image to ASCII Convertor"
-              image={ascii}
-              background="Designed as a simple small side project, this ascii converter was designed to be an easy and quick project to reintroduce myself to low languages like C after being in the world of Python for a long time. The Program works by taking various image formats converting them to a bitmap and grey scaling them; it then uses the grayscale to determine which character to use. Optionally you can also extract the color from the original image which allows images to be more visible and colorful."
-              github="https://github.com/Omniladder/Small-Projects"
-              tech1={cLogo}
             ></SmallCard>
           </div>
         </center>
