@@ -245,6 +245,34 @@ export function Experience() {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
+            contentStyle={{ background: "#a61c3c", color: "#d8d78f" }}
+            contentArrowStyle={{ borderRight: "7px solid  #a61c3c" }}
+            date="January 23rd-26th 2025"
+            iconStyle={{ background: "#4b4e70", color: "#208aae" }}
+            icon=<img
+              src={hackLogo}
+              style={{ width: "45px", marginTop: "3px" }}
+              className="XPLogo"
+            />
+          >
+            <h3 className="vertical-timeline-element-title">
+              Hoyahacks Hackathon 2025
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Georgetown, D.C.
+            </h4>
+            <p>
+              Continuing my string of Hackathons I went to Georgetown University
+              and participated in there 36 hour compeition. In a group of 4 we
+              worked on constructing a resume based platform known as Resume.Ai
+              here I worked on the Next.js frontend which was capable of taking
+              backend resume data and constructing visualy appealing entries.
+              This platform is capable of generating new tailored resumes and
+              finding relevant resumes based on job description
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
             iconStyle={{ background: "rgb(75, 201, 60)", color: "#208aae" }}
             icon=<img
               src={endIcon}
