@@ -85,7 +85,7 @@ export function About() {
                 <div className="linkArea">
                   <a
                     className="hyperlink"
-                    href="./downloads/Resume-1.pdf"
+                    href="./downloads/Dustin-Resume.pdf"
                     download
                   >
                     Download Resume
