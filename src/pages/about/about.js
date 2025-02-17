@@ -92,6 +92,18 @@ export function About() {
                   </a>
                 </div>
               </div>
+              <div className="linkContainer">
+                <div className="linkHead">Transcript: </div>
+                <div className="linkArea">
+                  <a
+                    className="hyperlink"
+                    href="./downloads/Transcript.pdf"
+                    download
+                  >
+                    Download Transcript
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
