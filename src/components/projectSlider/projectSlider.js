@@ -22,20 +22,18 @@ import haskellLogo from "../../pics/haskellLogo.png";
 import pythonLogo from "../../pics/pythonLogo.png";
 import fastAPILogo from "../../pics/fastapiLogo.svg";
 import SQLLogo from "../../pics/sqlLogo.png";
-import restLogo from "../../pics/restLogo.png";
+import dockerLogo from "../../pics/dockerLogo.png";
 import HTMLLogo from "../../pics/HTMLLogo.png";
 import CSSLogo from "../../pics/CSSLogo.png";
 import JSLogo from "../../pics/JSLogo.png";
 import agileLogo from "../../pics/agileLogo.png";
 import langchainLogo from "../../pics/langchainLogo.png";
 import pydanticLogo from "../../pics/pydanticLogo.svg";
-import dockerLogo from "../../pics/dockerLogo.png";
-import GPTLogo from "../../pics/GPTLogo.png";
 import jinjaLogo from "../../pics/jinjaLogo.png";
 import vanillaLogo from "../../pics/vanillaLogo.png";
 import jenkinsLogo from "../../pics/jenkinsLogo.png"
 import pytorchLogo from "../../pics/pytorchLogo.png"
-import pyqtLogo from "../../pics/pyqtLogo.jpeg";
+import pyqtLogo from "../../pics/pyqtLogo.png";
 
 /**
     *  IN THIS REGION WE DECLARE THE VARIOUS CARD PROPS TO BE USED
@@ -55,7 +53,7 @@ import pyqtLogo from "../../pics/pyqtLogo.jpeg";
         tech3: fastAPILogo,
         tech4: SQLLogo,
         tech5: jenkinsLogo,
-        tech6: restLogo,
+        tech6: dockerLogo,
     };
 
 const chessCardProps = {
@@ -132,11 +130,6 @@ export function ProjectSlider() {
     const [isCeliteOpen, setCeliteOpen] = useState(false);
     const celiteOpen = () => setCeliteOpen(true);
     const celiteClose = () => setCeliteOpen(false);
-
-    //Saltcast Chatbot Open Test Functions
-    const [isWantsOpen, setWantsOpen] = useState(false);
-    const wantsOpen = () => setWantsOpen(true);
-    const wantsClose = () => setWantsOpen(false);
 
     //Testif.Ai Open Test Functions
     const [isTestOpen, setTestOpen] = useState(false);

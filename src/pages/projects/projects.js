@@ -34,8 +34,6 @@ import pakistan from "../../pics/pakistan.png";
 import taylor from "../../pics/taylorSeries.png";
 import chessbot from "../../pics/chess_bot.png"
 import flashcardFactory from "../../pics/FlashcardFactory.jpg"
-import fifteen from "../../pics/fifteen.png";
-import graphics from "../../pics/graphics.png";
 import resumai from "../../pics/resumai.png";
 import sports from "../../pics/SportsClassfying.png";
 import reasoning from "../../pics/reasoning.jpg";
@@ -47,7 +45,6 @@ import haskellLogo from "../../pics/haskellLogo.png";
 import pythonLogo from "../../pics/pythonLogo.png";
 import fastAPILogo from "../../pics/fastapiLogo.svg";
 import sqlLogo from "../../pics/sqlLogo.png";
-import restLogo from "../../pics/restLogo.png";
 import htmlLogo from "../../pics/HTMLLogo.png";
 import cssLogo from "../../pics/CSSLogo.png";
 import jsLogo from "../../pics/JSLogo.png";
@@ -67,13 +64,8 @@ import sciKitLogo from "../../pics/scikitLogo.png";
 import pandasLogo from "../../pics/pandasLogo.png";
 import manimLogo from "../../pics/manimLogo.png";
 import sympyLogo from "../../pics/sympyLogo.png";
-import pyqtLogo from "../../pics/pyqtLogo.jpeg";
-import cppLogo from "../../pics/C++Logo.png";
-import cLogo from "../../pics/cLogo.png";
-import spotifyLogo from "../../pics/spotifyLogo.png";
+import pyqtLogo from "../../pics/pyqtLogo.png";
 import nextjsLogo from "../../pics/nextjsLogo.png";
-import openGLLogo from "../../pics/opeglLogo.png";
-import spotifyImage from "../../pics/SpotifyImage.png";
 import ollamaLogo from "../../pics/ollamaLogo.png"
 import huggingfaceLogo from "../../pics/huggingFaceLogo.svg"
 import rLogo from "../../pics/RLogo.png"
@@ -123,7 +115,7 @@ export function Projects() {
         tech3={fastAPILogo}
         tech4={sqlLogo}
         tech5={jenkinsLogo}
-        tech6={restLogo}
+        tech6={dockerLogo}
         ></SmallCard>
 
         <SmallCard
