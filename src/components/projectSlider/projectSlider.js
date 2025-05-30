@@ -12,7 +12,6 @@ import { EffectCoverflow, Pagination } from "swiper/modules";
 // These are the imports for images used in large project sliders
 import haskell from "../../pics/haskell.jpeg";
 import cellular from "../../pics/cells.png";
-import wants from "../../pics/clientWants.png";
 import testifAi from "../../pics/TestifAi.png";
 import flashcardFactory from "../../pics/FlashcardFactory.jpg"
 import chessbot from "../../pics/chess_bot.png"
@@ -26,7 +25,7 @@ import dockerLogo from "../../pics/dockerLogo.png";
 import HTMLLogo from "../../pics/HTMLLogo.png";
 import CSSLogo from "../../pics/CSSLogo.png";
 import JSLogo from "../../pics/JSLogo.png";
-import agileLogo from "../../pics/agileLogo.png";
+import awsLogo from "../../pics/awsLogo.png";
 import langchainLogo from "../../pics/langchainLogo.png";
 import pydanticLogo from "../../pics/pydanticLogo.svg";
 import jinjaLogo from "../../pics/jinjaLogo.png";
@@ -98,7 +97,7 @@ const celiteCardProps = {
     tech1: JSLogo,
     tech2: HTMLLogo,
     tech3: CSSLogo,
-    tech4: agileLogo,
+    tech4: awsLogo,
     tech5: null,
     tech6: null,
 };

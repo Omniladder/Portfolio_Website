@@ -48,7 +48,23 @@ export function About() {
           </div>
           <div className="picture-link-div">
             <img src={dustin} className="mathPhoto"></img>
-            <div className="personalDiv">
+                     </div>
+        </div>
+        <div className="middleSection">
+
+          <div className="skillDiv">
+            <div className="skillHead">Tech Stack:</div>
+            <div className="skillGrid">
+              <img src={ubuntuLogo} className="skillDiv"></img>
+              <img src={neovimLogo} className="skillDiv"></img>
+              <img src={pythonLogo} className="skillDiv"></img>
+              <img src={reactLogo} className="skillDiv"></img>
+              <img src={gitLogo} className="skillDiv"></img>
+              <img src={awsLogo} className="skillDiv"></img>
+            </div>
+          </div>
+        </div>
+<div className="personalDiv">
               <div className="linkDivHead">Links:</div>
               <div className="linkContainer">
                 <div className="linkHead">Github: </div>
@@ -105,21 +121,7 @@ export function About() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="middleSection">
-          <div className="skillDiv">
-            <div className="skillHead">Tech Stack:</div>
-            <div className="skillGrid">
-              <img src={ubuntuLogo} className="skillDiv"></img>
-              <img src={neovimLogo} className="skillDiv"></img>
-              <img src={pythonLogo} className="skillDiv"></img>
-              <img src={reactLogo} className="skillDiv"></img>
-              <img src={gitLogo} className="skillDiv"></img>
-              <img src={awsLogo} className="skillDiv"></img>
-            </div>
-          </div>
-        </div>
+ 
       </body>
     </div>
   );

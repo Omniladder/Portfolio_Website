@@ -48,7 +48,7 @@ import sqlLogo from "../../pics/sqlLogo.png";
 import htmlLogo from "../../pics/HTMLLogo.png";
 import cssLogo from "../../pics/CSSLogo.png";
 import jsLogo from "../../pics/JSLogo.png";
-import agileLogo from "../../pics/agileLogo.png";
+import awsLogo from "../../pics/awsLogo.png"
 import langchainLogo from "../../pics/langchainLogo.png";
 import pydanticLogo from "../../pics/pydanticLogo.svg";
 import dockerLogo from "../../pics/dockerLogo.png";
@@ -144,7 +144,7 @@ export function Projects() {
         tech1={jsLogo}
         tech2={htmlLogo}
         tech3={cssLogo}
-        tech4={agileLogo}
+        tech4={awsLogo}
         ></SmallCard>
 
         <SmallCard
