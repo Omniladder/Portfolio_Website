@@ -33,7 +33,7 @@ export function Education() {
             <div className="sectionDiv">
               <div className="sectionHead">Major:</div>
               <div className="sectionContent">
-                Computer Science & Data Science
+                Computer Science, Data Science
               </div>
             </div>
             <div className="sectionDiv">
@@ -45,7 +45,7 @@ export function Education() {
             </div>
             <div className="sectionDiv">
               <div className="sectionHead">GPA:</div>
-              <div className="sectionContent">3.589</div>
+              <div className="sectionContent"> 3.614 Major | 3.608 Cumulative</div>
             </div>
             <div className="sectionDiv">
               <div className="sectionHead">Minor:</div>
@@ -64,45 +64,46 @@ export function Education() {
               <div className="semesterName">Spring 2025:</div>
               <div className="semesterClasses">
                 <ClassDrop
-                  grade=""
+                  grade="A"
                   courseName="Theory of Computation"
                   courseDescription="Applications of discrete mathematics to computer science and introduction to the theory of computation. Topics include automata and formal languages, computability by Turing machines and recursive functions, undecidability and computational complexity."
                   courseID="COSC-362"
                   professor="Dr. Junyi Tu"
                   numCredits={4}
                 ></ClassDrop>
-                <ClassDrop
-                  grade=""
-                  courseName="Object Oriented Design Patterns"
-                  courseDescription="Covers three related topics: event-driven programming, graphical user interface (GUI) and object-oriented (OO) design using design patterns. The event-driven model is examined throughout the course. OO design is introduced through the analysis of design patterns. "
-                  courseID="COSC-330"
-                  professor="Dr. Xiaohong Wang"
-                  numCredits={3}
-                ></ClassDrop>
-                <ClassDrop
-                  grade=""
+               <ClassDrop
+                  grade="A"
                   courseName="Special Topics - Large Language Models"
                   courseDescription="Seminar course with content that varies semester to semester (e.g., artificial intelligence, compiler construction or other topics suggested by faculty or students)."
                   courseID="COSC-490"
                   professor="Dr. Junyi Tu"
                   numCredits={3}
                 ></ClassDrop>
-                <ClassDrop
-                  grade=""
-                  courseName="Undergradate Research - Tree of Thought"
-                  courseDescription="Offers study of some area of computer science in more depth than is possible in the usual classroom setting. Students work on projects under the direction of faculty members."
-                  courseID="COSC-390"
-                  professor="Dr. Junyi Tu"
-                  numCredits={3}
-                ></ClassDrop>
-                <ClassDrop
-                  grade=""
+               <ClassDrop
+                  grade="A"
                   courseName="Capstone Project"
                   courseDescription="Capstone project in one of the areas of data science chosen, designed and carried out with the advice and approval of a faculty member. Actual work may be carried out at off-campus sites. Written report and seminar presentation are required."
                   courseID="DSCI-490"
                   professor="Dr. Kyle Teller"
                   numCredits={3}
                 ></ClassDrop>
+               <ClassDrop
+                  grade="B"
+                  courseName="Object Oriented Design Patterns"
+                  courseDescription="Covers three related topics: event-driven programming, graphical user interface (GUI) and object-oriented (OO) design using design patterns. The event-driven model is examined throughout the course. OO design is introduced through the analysis of design patterns. "
+                  courseID="COSC-330"
+                  professor="Dr. Xiaohong Wang"
+                  numCredits={3}
+                ></ClassDrop>
+                 <ClassDrop
+                  grade="P"
+                  courseName="Undergradate Research - Tree of Thought"
+                  courseDescription="Offers study of some area of computer science in more depth than is possible in the usual classroom setting. Students work on projects under the direction of faculty members."
+                  courseID="COSC-390"
+                  professor="Dr. Junyi Tu"
+                  numCredits={3}
+                ></ClassDrop>
+ 
               </div>
             </div>
 

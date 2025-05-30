@@ -6,10 +6,10 @@ import dustin from "../../pics/Dustin2.jpg";
 
 import ubuntuLogo from "../../pics/ubuntuLogo.png";
 import pythonLogo from "../../pics/pythonLogo.png";
-import vscodeLogo from "../../pics/vscodeLogo.png";
-import cppLogo from "../../pics/C++Logo.png";
+import neovimLogo from "../../pics/neovimLogo.png";
+import awsLogo from "../../pics/awsLogo.png";
 import gitLogo from "../../pics/gitLogo.png";
-import vanillaLogo from "../../pics/vanillaLogo.png";
+import reactLogo from "../../pics/reactLogo.png";
 
 export function About() {
   return (
@@ -85,7 +85,7 @@ export function About() {
                 <div className="linkArea">
                   <a
                     className="hyperlink"
-                    href="./downloads/Dustin-Resume.pdf"
+                    href="./downloads/resume.pdf"
                     download
                   >
                     Download Resume
@@ -109,14 +109,14 @@ export function About() {
         </div>
         <div className="middleSection">
           <div className="skillDiv">
-            <div className="skillHead">Major Skills:</div>
+            <div className="skillHead">Tech Stack:</div>
             <div className="skillGrid">
               <img src={ubuntuLogo} className="skillDiv"></img>
-              <img src={vscodeLogo} className="skillDiv"></img>
-              <img src={cppLogo} className="skillDiv"></img>
-              <img src={gitLogo} className="skillDiv"></img>
+              <img src={neovimLogo} className="skillDiv"></img>
               <img src={pythonLogo} className="skillDiv"></img>
-              <img src={vanillaLogo} className="skillDiv"></img>
+              <img src={reactLogo} className="skillDiv"></img>
+              <img src={gitLogo} className="skillDiv"></img>
+              <img src={awsLogo} className="skillDiv"></img>
             </div>
           </div>
         </div>
