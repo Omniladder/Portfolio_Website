@@ -1,170 +1,172 @@
 .mathPhoto {
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  height: 30vw;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    height: 30vw;
 
-  border-radius: 40vw;
-  border: 0.7vw solid #208aae;
-  margin-top: 2vw;
-  margin-left: 8vw;
+    border-radius: 40vw;
+    border: 0.7vw solid #208aae;
+    margin-top: 2vw;
+    margin-left: 8vw;
 }
 
 .topBio {
-  display: flex;
+    display: flex;
 }
 
 .bioDiv {
-  min-width: 45vw;
-  border-radius: 3vw;
-  border: 0.4vw solid #4b4e70;
-  height: 30vw;
-  width: 45vw;
-  margin-left: 6vw;
-  margin-top: 3vw;
+    min-width: 45vw;
+    border-radius: 3vw;
+    border: 0.4vw solid #4b4e70;
+    height: 30vw;
+    width: 45vw;
+    margin-left: 6vw;
+    margin-top: 3vw;
 }
 
 .biographySection {
-  text-align: justify;
-  width: 40vw;
-  margin-left: 2.5vw;
-  font-family: "Rubik", sans-serif;
-  font-size: 1.3vw;
-  color: #d8d78f;
-  text-indent: 3vw;
+    text-align: justify;
+    width: 40vw;
+    margin-left: 2.5vw;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.3vw;
+    color: #d8d78f;
+    text-indent: 3vw;
 }
 
 .bioHead {
-  margin-top: 1vw;
-  text-align: left;
-  margin-left: 3vw;
-  color: #d8d78f;
-  font-weight: 600;
-  font-size: 1.7vw;
+    margin-top: 1vw;
+    text-align: left;
+    margin-left: 3vw;
+    color: #d8d78f;
+    font-weight: 600;
+    font-size: 1.7vw;
 }
 
 .personalDiv {
-  border: 0.4vw solid #4b4e70;
-  border-radius: 2vw;
-  height: 8vw;
-  width: 20vw;
-  text-align: left;
-  margin-left: 3vw;
+    border: 0.4vw solid #4b4e70;
+    border-radius: 2vw;
+    width: 20vw;
+    text-align: left;
+    margin-left: 3vw;
+    float: right;
+    margin-right: 8vw;
+    margin-top: 1vw;
+    padding: .2vw;
+}
+
+.contactText {
+    color: #ffffff;
 }
 
 .linkContainer div {
-  display: inline-block;
+    display: inline-block;
 }
 
 .linkDivHead {
-  margin-left: 2vw;
-  margin-bottom: 0vw;
-  margin-top: 0vw;
+    margin-left: 2vw;
+    margin-bottom: 0vw;
+    margin-top: 0vw;
 }
 
 .linkHead {
-  color: #d8d78f;
-  font-weight: 600;
-  font-size: 1vw;
-  margin-right: 2em;
+    color: #d8d78f;
+    font-weight: 600;
+    font-size: 1vw;
+    margin-right: 2em;
 }
 
 .linkArea {
-  float: right;
-  margin-right: 2vw;
+    float: right;
+    margin-right: 2vw;
 }
 
 .linkContainer {
-  margin-left: 2vw;
-  margin-top: 0vw;
-  gap: 0vw;
+    margin-left: 2vw;
+    margin-top: 0vw;
+    gap: 0vw;
 }
 
 .downloadsDiv {
-  margin-left: 2vw;
+    margin-left: 2vw;
 }
 
 .middleSection {
-  display: flex;
-  float: left;
-  align-items: left;
-  margin-top: 1vw;
-  border: 0.4vw solid #4b4e70;
-  border-radius: 2vw;
-  width: 65vw;
-  height: 15vw;
+    display: flex;
+    float: left;
+    align-items: left;
+    margin-top: 1vw;
+    border: 0.4vw solid #4b4e70;
+    border-radius: 2vw;
+    width: 65vw;
+    height: 15vw;
 }
 
 .skillGrid {
-  margin-top: 2vw;
-  margin-left: 0vw;
-  float: left;
+    margin-top: 2vw;
+    margin-left: 0vw;
+    float: left;
 }
 
 .skillDiv {
-  height: 8vw;
-  margin-left: 2vw;
+    height: 8vw;
+    margin-left: 2vw;
 }
 
 .skillHead {
-  color: #d8d78f;
-  font-weight: 600;
-  font-size: 2vw;
-  margin-left: 1vw;
+    color: #d8d78f;
+    font-weight: 600;
+    font-size: 2vw;
+    margin-left: 1vw;
 }
 
 .linkDivHead {
-  color: #d8d78f;
-  font-weight: 600;
-  font-size: 2vw;
+    color: #d8d78f;
+    font-weight: 600;
+    font-size: 2vw;
 }
 
-.personalDiv {
-  float: right;
-  margin-right: 8vw;
-  margin-top: 2vw;
-  height: 8.5vw;
-}
+
 
 .hyperlink {
-  font-size: 0.9vw;
-  color: rgb(77, 229, 240); /* Makes the link text blue */
-  text-decoration: underline; /* Adds underline to indicate a clickable link */
+    font-size: 0.9vw;
+    color: rgb(77, 229, 240); /* Makes the link text blue */
+    text-decoration: underline; /* Adds underline to indicate a clickable link */
 }
 
 .hyperlink:hover {
-  color: rgb(
+    color: rgb(
     106,
     106,
     209
-  ); /* Changes color when hovered for better user experience */
+    ); /* Changes color when hovered for better user experience */
 }
 
 @media (max-aspect-ratio: 1/1) {
-  .topBio {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .mathPhoto {
-    width: 40vw;
-    height: 40vw;
-  }
-  .picture-link-div {
-    justify-content: center;
-  }
+    .topBio {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .mathPhoto {
+        width: 40vw;
+        height: 40vw;
+    }
+    .picture-link-div {
+        justify-content: center;
+    }
 
-  .biographySection {
-    width: 70vw;
-    font-size: 2.5vw;
-    color: #d8d78f;
-  }
-  .bioHead {
-    font-size: 3.5vw;
-  }
-  .bioDiv {
-    margin-left: 10vw;
-    max-width: 80vw;
-    width: 80vw;
-    height: 60vw;
-  }
+    .biographySection {
+        width: 70vw;
+        font-size: 2.5vw;
+        color: #d8d78f;
+    }
+    .bioHead {
+        font-size: 3.5vw;
+    }
+    .bioDiv {
+        margin-left: 10vw;
+        max-width: 80vw;
+        width: 80vw;
+        height: 60vw;
+    }
 }

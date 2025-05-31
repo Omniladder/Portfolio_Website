@@ -1,0 +1,67 @@
+.contactForm{
+    border: 0.4vw solid #4b4e70;
+    border-radius: 2vw;
+    margin-top: 15vw;
+    width: 60vw;
+    display: block;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.contactTitle{
+    color: #d8d78f;
+    margin-left:2vw;
+    font-weight: 600;
+    font-size: 2vw;
+}
+
+.nameInput{
+    width: 50vw;
+    height: 1.3vw;
+    color: #d8d78f;
+    background-color:#4b4e70; 
+}
+
+.messageArea{
+    width: 50vw;
+    height: 15vw;
+    color: #d8d78f;
+    background-color:#4b4e70; 
+    font-size: 1vw;
+}
+
+.contactContentSection{
+    margin-bottom: .7vw;
+}
+
+.contactContentHeader{
+    color: #d8d78f;
+    font-weight: 500;
+    font-size: 1.5vw;
+}
+
+.contactSubmit{
+    cursor: pointer;
+    color: #d8d78f;
+    font-weight: 600;
+    font-size: 1.5vw;
+    border-radius: 1vh;
+    border: 7px solid #3d405b;
+    background-color:  #3d405b;
+    margin-top: 1.5vw;
+  transition: border-color 0.25s ease;
+}
+
+
+.contactSubmit:hover{
+    border: 7px solid #4b4e70;
+  }
+
+
+.contactSubmit:active{
+    background-color: #4b4e70;
+}
