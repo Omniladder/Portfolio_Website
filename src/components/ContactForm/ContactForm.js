@@ -1,10 +1,23 @@
 import "./ContactForm.css"
 import React from "react";
+import emailjs from "emailjs-com"
 
+
+function sendEmail(e) {
+  e.preventDefault();
+
+  emailjs.sendForm('service_3szjdhy', 'template_papgv7o', e.target, 'q2R6piG4JV4lLTJwP')
+    .then(result => {
+      console.log('Message sent!');
+        e.target.reset();
+    }, error => {
+      console.log('Error:', error.text);
+    });
+}
 
 export default function ContactForm(){
     return (
-        <div className="contactForm">
+        <form onSubmit={sendEmail} className="contactForm">
             <center>
                 <div className="contactTitle">
                      Contact Form
@@ -16,7 +29,7 @@ export default function ContactForm(){
                     Name:
                 </div>
                 <div className="contactContentBox">
-                    <input type="text" className="nameInput"/>
+                    <input type="text" className="nameInput" name="name" required/>
                 </div>
             </div>
 
@@ -25,7 +38,7 @@ export default function ContactForm(){
                     Email:
                 </div>
                 <div className="contactContentBox">
-                    <input type="text" className="nameInput"/>
+                    <input type="text" className="nameInput" name="email" required/>
                 </div>
             </div>
 
@@ -34,7 +47,7 @@ export default function ContactForm(){
                     Subject:
                 </div>
                 <div className="contactContentBox">
-                    <input type="text" className="nameInput"/>
+                    <input type="text" className="nameInput" name="Subject" required/>
                 </div>
             </div>
             <div style={{height: "1vw"}}></div>
@@ -43,11 +56,11 @@ export default function ContactForm(){
                     Message:
                 </div>
                 <div className="contactMessageRegion">
-                    <textarea className="messageArea"></textarea>
+                    <textarea className="messageArea" name="message" required></textarea>
                 </div>
             </div>
-            <button className="contactSubmit">Submit</button>
+            <button className="contactSubmit" type="submit">Submit</button>
 
-        </div>
+        </form>
     );
 }
