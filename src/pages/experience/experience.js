@@ -333,6 +333,32 @@ export function Experience() {
         className="XPLogo"
         />
         ></VerticalTimelineElement>
+        <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        contentStyle={{ background: "#a61c3c", color: "#d8d78f" }}
+        contentArrowStyle={{ borderRight: "7px solid  #a61c3c" }}
+        date="July 28th 2025"
+        iconStyle={{ background: "#4b4e70", color: "#208aae" }}
+        icon=<img
+        src={hackLogo}
+        style={{ width: "45px", marginTop: "3px" }}
+        className="XPLogo"
+        />
+        >
+        <h3 className="vertical-timeline-element-title">
+        Certified Cloud Practioner Certification
+        </h3>
+        <h4 className="vertical-timeline-element-subtitle">
+        Derwood, MD
+        </h4>
+        <p>
+        To continue and better my knowledge of servers and cloud computing
+        I embaeked on getting AWS Cloud certifications. The first of which
+        is there Cloud Practioner exam which taught me many of the fundamentals,
+        Services, and gave me the underlying knowledge of what a modern cloud
+        infrastructure should look like.
+        </p>
+        </VerticalTimelineElement>
         </VerticalTimeline>
         </body>
         </div>
