@@ -25,6 +25,7 @@ import { SmallCard } from "../../components/smallCard/smallCard.js";
 
     // These are the imports for images used in large project sliders
 import haskell from "../../pics/haskell.jpeg";
+import chapp from "../../pics/chapp.png";
 import cellular from "../../pics/cells.png";
 import wants from "../../pics/clientWants.png";
 import testifAi from "../../pics/TestifAi.png";
@@ -42,6 +43,11 @@ import flashcardApp from "../../pics/Flashcard.png"
 
 //Logo Imports
 import haskellLogo from "../../pics/haskellLogo.png";
+import angularLogo from "../../pics/angularLogo.png";
+import nodeLogo from "../../pics/nodeLogo.png";
+import typescriptLogo from "../../pics/typescriptLogo.png";
+import postgresLogo from "../../pics/postgresLogo.png";
+import tailwindLogo from "../../pics/tailwindLogo.png";
 import pythonLogo from "../../pics/pythonLogo.png";
 import fastAPILogo from "../../pics/fastapiLogo.svg";
 import sqlLogo from "../../pics/sqlLogo.png";
@@ -103,6 +109,22 @@ export function Projects() {
 
         <center>
         <div className="projectGrid">
+        <SmallCard
+        title="Chapp."
+        quote="A Gamified Text Chat Website"
+        image={chapp}
+        background="A gamified text chat Chapp is a full stack web application with a multitude of various technologies. Designed to be a flagship application Chapp is built in Typescript using Express.JS as its backend and Angular as its frontend. PostgreSQL is used as the Database Engine and is used to store users, conversations, relationships, and friends. The program is also designed to be easily deployable and eventually scalable with technologies like terraform and AWS for wide spread hosting."
+        github="https://github.com/Omniladder/Chapp"
+        tech1={angularLogo}
+        tech2={nodeLogo}
+        tech3={typescriptLogo}
+        tech4={postgresLogo}
+        tech5={tailwindLogo}
+        tech6={dockerLogo}
+        ></SmallCard>
+
+
+
         <SmallCard
         title="Lambda Check"
         quote="A Haskell Vulnerability Detector"

@@ -15,8 +15,15 @@ import cellular from "../../pics/cells.png";
 import testifAi from "../../pics/TestifAi.png";
 import flashcardFactory from "../../pics/FlashcardFactory.jpg"
 import chessbot from "../../pics/chess_bot.png"
+import chapp from "../../pics/chapp.png";
 
 //Logo Imports
+import angularLogo from "../../pics/angularLogo.png";
+import nodeLogo from "../../pics/nodeLogo.png";
+import typescriptLogo from "../../pics/typescriptLogo.png";
+import postgresLogo from "../../pics/postgresLogo.png";
+import tailwindLogo from "../../pics/tailwindLogo.png";
+
 import haskellLogo from "../../pics/haskellLogo.png";
 import pythonLogo from "../../pics/pythonLogo.png";
 import fastAPILogo from "../../pics/fastapiLogo.svg";
@@ -85,6 +92,21 @@ const factoryCardProps = {
 
 
 
+const chappCardProps = { 
+    title: "Chapp.",
+    quote: "A Gamified Text Chat Website",
+    image: chapp,
+    background: "A gamified text chat Chapp is a full stack web application with a multitude of various technologies. Designed to be a flagship application Chapp is built in Typescript using Express.JS as its backend and Angular as its frontend. PostgreSQL is used as the Database Engine and is used to store users, conversations, relationships, and friends. The program is also designed to be easily deployable and eventually scalable with technologies like terraform and AWS for wide spread hosting.",
+    github: "https://github.com/Omniladder/Chapp",
+    tech1: angularLogo,
+    tech2: nodeLogo,
+    tech3: typescriptLogo,
+    tech4: postgresLogo,
+    tech5: tailwindLogo,
+    tech6: dockerLogo,
+};
+
+
 const celiteCardProps = {
     title: "Celite",
     quote: "A Cellular Automata Simulator",
@@ -135,6 +157,11 @@ export function ProjectSlider() {
     const testOpen = () => setTestOpen(true);
     const testClose = () => setTestOpen(false);
 
+    const [isChappOpen, setChappOpen] = useState(false);
+    const chappOpen = () => setChappOpen(true);
+    const chappClose = () => setChappOpen(false);
+
+
     const [isChessOpen, setChessOpen] = useState(false);
     const chessOpen = () => setChessOpen(true);
     const chessClose = () => setChessOpen(false);
@@ -182,6 +209,26 @@ export function ProjectSlider() {
             ) : null
         }
         </SwiperSlide>
+
+
+        {/* Slide 2 Chapp*/}
+        <SwiperSlide>
+        {({ isVisible }) =>
+            isVisible ? (
+                <div
+                style={{ width: "fit-content" }}
+                onClick={() => {
+                    chappOpen();
+                }}
+                >
+                <LargeCard
+                {...{ ...chappCardProps, initalOpen: true }}
+                ></LargeCard>
+                </div>
+            ) : null
+        }
+        </SwiperSlide>
+
 
         {/* Slide 2 Celite*/}
         <SwiperSlide>
@@ -303,6 +350,18 @@ export function ProjectSlider() {
         <LargeCard {...{ ...chessCardProps, initalOpen: false }}></LargeCard>
         </div>
         </Modal>
+
+        <Modal open={isChappOpen}>
+        <div
+        style={{ width: "fit-content" }}
+        onClick={() => {
+            chappClose();
+        }}
+        >
+        <LargeCard {...{ ...chappCardProps, initalOpen: false }}></LargeCard>
+        </div>
+        </Modal>
+
 
         <Modal open={isFactoryOpen}>
         <div

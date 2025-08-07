@@ -326,15 +326,6 @@ export function Experience() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        iconStyle={{ background: "rgb(75, 201, 60)", color: "#208aae" }}
-        icon=<img
-        src={endIcon}
-        style={{ width: "45px", marginTop: "3px" }}
-        className="XPLogo"
-        />
-        ></VerticalTimelineElement>
-        <VerticalTimelineElement
-        className="vertical-timeline-element--work"
         contentStyle={{ background: "#a61c3c", color: "#d8d78f" }}
         contentArrowStyle={{ borderRight: "7px solid  #a61c3c" }}
         date="July 28th 2025"
@@ -359,6 +350,16 @@ export function Experience() {
         infrastructure should look like.
         </p>
         </VerticalTimelineElement>
+        <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        iconStyle={{ background: "rgb(75, 201, 60)", color: "#208aae" }}
+        icon=<img
+        src={endIcon}
+        style={{ width: "45px", marginTop: "3px" }}
+        className="XPLogo"
+        />
+        ></VerticalTimelineElement>
+
         </VerticalTimeline>
         </body>
         </div>

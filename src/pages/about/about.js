@@ -5,11 +5,11 @@ import ContactForm from "../../components/ContactForm/ContactForm.js"
 
 import dustin from "../../pics/Dustin2.jpg";
 
-import ubuntuLogo from "../../pics/ubuntuLogo.png";
 import pythonLogo from "../../pics/pythonLogo.png";
 import neovimLogo from "../../pics/neovimLogo.png";
 import awsLogo from "../../pics/awsLogo.png";
-import gitLogo from "../../pics/gitLogo.png";
+import archLogo from "../../pics/archLogo.png";
+import postgresLogo from "../../pics/postgresLogo.png"
 import reactLogo from "../../pics/reactLogo.png";
 
 export function About() {
@@ -56,11 +56,11 @@ export function About() {
         <div className="skillDiv">
         <div className="skillHead">Tech Stack:</div>
         <div className="skillGrid">
-        <img src={ubuntuLogo} className="skillDiv"></img>
+        <img src={archLogo} className="skillDiv"></img>
         <img src={neovimLogo} className="skillDiv"></img>
         <img src={pythonLogo} className="skillDiv"></img>
         <img src={reactLogo} className="skillDiv"></img>
-        <img src={gitLogo} className="skillDiv"></img>
+        <img src={postgresLogo} className="skillDiv"></img>
         <img src={awsLogo} className="skillDiv"></img>
         </div>
         </div>
