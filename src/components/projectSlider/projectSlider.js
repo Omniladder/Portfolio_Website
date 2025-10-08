@@ -23,6 +23,7 @@ import nodeLogo from "../../pics/nodeLogo.png";
 import typescriptLogo from "../../pics/typescriptLogo.png";
 import postgresLogo from "../../pics/postgresLogo.png";
 import tailwindLogo from "../../pics/tailwindLogo.png";
+import k8sLogo from "../../pics/kubernetes.png"
 
 import haskellLogo from "../../pics/haskellLogo.png";
 import pythonLogo from "../../pics/pythonLogo.png";
@@ -98,12 +99,13 @@ const chappCardProps = {
     image: chapp,
     background: "A gamified text chat Chapp is a full stack web application with a multitude of various technologies. Designed to be a flagship application Chapp is built in Typescript using Express.JS as its backend and Angular as its frontend. PostgreSQL is used as the Database Engine and is used to store users, conversations, relationships, and friends. The program is also designed to be easily deployable and eventually scalable with technologies like terraform and AWS for wide spread hosting.",
     github: "https://github.com/Omniladder/Chapp",
+    webLink: "https://chapp.dustintobrien.com",
     tech1: angularLogo,
     tech2: nodeLogo,
     tech3: typescriptLogo,
     tech4: postgresLogo,
-    tech5: tailwindLogo,
-    tech6: dockerLogo,
+    tech5: dockerLogo,
+    tech6: k8sLogo,
 };
 
 
