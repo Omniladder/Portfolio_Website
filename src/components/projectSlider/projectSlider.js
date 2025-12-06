@@ -11,9 +11,8 @@ import { EffectCoverflow, Pagination } from "swiper/modules";
 
 // These are the imports for images used in large project sliders
 import haskell from "../../pics/haskell.jpeg";
-import cellular from "../../pics/cells.png";
+import cosmos from "../../pics/cosmos.png";
 import testifAi from "../../pics/TestifAi.png";
-import flashcardFactory from "../../pics/FlashcardFactory.jpg"
 import chessbot from "../../pics/chess_bot.png"
 import chapp from "../../pics/chapp.png";
 
@@ -22,8 +21,9 @@ import angularLogo from "../../pics/angularLogo.png";
 import nodeLogo from "../../pics/nodeLogo.png";
 import typescriptLogo from "../../pics/typescriptLogo.png";
 import postgresLogo from "../../pics/postgresLogo.png";
-import tailwindLogo from "../../pics/tailwindLogo.png";
 import k8sLogo from "../../pics/kubernetes.png"
+
+import reactLogo from "../../pics/reactLogo.png";
 
 import haskellLogo from "../../pics/haskellLogo.png";
 import pythonLogo from "../../pics/pythonLogo.png";
@@ -45,6 +45,20 @@ import pyqtLogo from "../../pics/pyqtLogo.png";
 /**
     *  IN THIS REGION WE DECLARE THE VARIOUS CARD PROPS TO BE USED
     */
+
+    const cosmosCardProps = {
+        title: "COSMOS",
+        quote: "A Zero Trust DoD Cloud Workflow",
+        image: cosmos,
+        background: "COSMOS is a web app designed to allow for navyDoD developers to quickly create AWS Gov based projects. Rather than taking months going through bureaucracy COSMOS takes about 30 minutes and only requires DoD CAC cards too grant secure access to AWS Gov infrastructure. This allows for fast Cloud based R & D keeping governmental cloud resources up too date and utilizing the newest commerical Amazon technologies. My job focuses on working the main developers SBS on maintaining and upgrading these softwares too allow for better integration upgraded security testing, meeting regulatory requirements and more.",
+        webLink: "https://www.cosmos.navy.mil/",
+        tech1: awsLogo,
+        tech2: typescriptLogo,
+        tech3: nodeLogo,
+        tech4: postgresLogo,
+        tech5: reactLogo
+    }
+
 
     const lambdaCardProps = {
         title: "Lambda Check",
@@ -76,20 +90,6 @@ const chessCardProps = {
     downloadFile: "./downloads/chessbotPresentation.pdf",
 };
 
-const factoryCardProps = {
-    title: "Flashcard Factory",
-    quote: "A LLM-Based Flashcard Maker",
-    image: flashcardFactory,
-    background: "Created for HenHacks 2025 Flashcard Factory is the finale demonstrating the skill and speed at which me and my partners are capable of making adavanced LLM based products. The Application is a Flashcard Generation website which uses use provided notes, slides etc. to generate sets of flashcards which integrate with Quizlet. My work personally focused on the middle end and devops portioons hosting the site via AWS as well as using FastAPI to communicate between the front and back end I also worked on managing schemas between the two sides.",
-    tech1: pythonLogo,
-    tech2: langchainLogo,
-    tech3: vanillaLogo,
-    tech4: jinjaLogo,
-    tech5: fastAPILogo,
-    tech6: pydanticLogo,
-    webLink: "https://devpost.com/software/flashcardfactory",
-    github: "https://github.com/cbarbes1/HenHacks2025",
-};
 
 
 
@@ -106,24 +106,6 @@ const chappCardProps = {
     tech4: postgresLogo,
     tech5: dockerLogo,
     tech6: k8sLogo,
-};
-
-
-const celiteCardProps = {
-    title: "Celite",
-    quote: "A Cellular Automata Simulator",
-    image: cellular,
-    background:
-    "Celite is a website developed over 12 months, designed to provide a user-friendly experience for mathematicians and enthusiasts to explore elementary cellular automata. It has been used to create visuals for new textbooks and courses, supporting undergraduate research projects. Built by a team of three, including myself, during two advanced computer science courses, the project was guided by university professors. Celite is set to be presented at Salisbury University's SUSRC Research Conference, showcasing its impact on education and research.",
-    github: "https://github.com/ktranfaglia1/Celite",
-    webLink: "https://celite.org/",
-    downloadFile: null,
-    tech1: JSLogo,
-    tech2: HTMLLogo,
-    tech3: CSSLogo,
-    tech4: awsLogo,
-    tech5: null,
-    tech6: null,
 };
 
 const testCardProps = {
@@ -144,15 +126,16 @@ const testCardProps = {
 };
 
 export function ProjectSlider() {
+
+    //COSMOS Open Test Functions
+    const [isCosmosOpen, setCosmosOpen] = useState(false);
+    const cosmosOpen = () => setCosmosOpen(true);
+    const cosmosClose = () => setCosmosOpen(false);
+
     //Lambda Open Test Functions
     const [isLambdaOpen, setLambdaOpen] = useState(false);
     const lambdaOpen = () => setLambdaOpen(true);
     const lambdaClose = () => setLambdaOpen(false);
-
-    //Celite Open Test Functions
-    const [isCeliteOpen, setCeliteOpen] = useState(false);
-    const celiteOpen = () => setCeliteOpen(true);
-    const celiteClose = () => setCeliteOpen(false);
 
     //Testif.Ai Open Test Functions
     const [isTestOpen, setTestOpen] = useState(false);
@@ -168,9 +151,6 @@ export function ProjectSlider() {
     const chessOpen = () => setChessOpen(true);
     const chessClose = () => setChessOpen(false);
 
-    const [isFactoryOpen, setFactoryOpen] = useState(false);
-    const factoryOpen = () => setFactoryOpen(true);
-    const factoryClose = () => setFactoryOpen(false);
 
     return (
         <div>
@@ -194,6 +174,7 @@ export function ProjectSlider() {
                 slideShadows: false,
         }}
         >
+
         {/* Slide 1 Lambda Check*/}
         <SwiperSlide>
         {({ isVisible }) =>
@@ -206,6 +187,24 @@ export function ProjectSlider() {
                 >
                 <LargeCard
                 {...{ ...lambdaCardProps, initalOpen: true }}
+                ></LargeCard>
+                </div>
+            ) : null
+        }
+        </SwiperSlide>
+
+        {/* Slide 2 COSMOS*/}
+        <SwiperSlide>
+        {({ isVisible }) =>
+            isVisible ? (
+                <div
+                style={{ width: "fit-content" }}
+                onClick={() => {
+                    cosmosOpen();
+                }}
+                >
+                <LargeCard
+                {...{ ...cosmosCardProps, initalOpen: true }}
                 ></LargeCard>
                 </div>
             ) : null
@@ -232,24 +231,6 @@ export function ProjectSlider() {
         </SwiperSlide>
 
 
-        {/* Slide 2 Celite*/}
-        <SwiperSlide>
-        {({ isVisible }) =>
-            isVisible ? ( //Stops rendering when off of swiper
-                <div
-                style={{ width: "fit-content" }}
-                onClick={() => {
-                    celiteOpen();
-                }}
-                >
-                <LargeCard
-                {...{ ...celiteCardProps, initalOpen: true }}
-                ></LargeCard>
-                </div>
-            ) : null
-        }
-        </SwiperSlide>
-
         {/* Slide 3 TestifAi*/}
         <SwiperSlide>
         {({ isVisible }) =>
@@ -262,24 +243,6 @@ export function ProjectSlider() {
                 >
                 <LargeCard
                 {...{ ...testCardProps, initalOpen: true }}
-                ></LargeCard>
-                </div>
-            ) : null
-        }
-        </SwiperSlide>
-
-        {/* Slide 4 Flashcard Factory*/}
-        <SwiperSlide>
-        {({ isVisible }) =>
-            isVisible ? (
-                <div
-                style={{ width: "fit-content" }}
-                onClick={() => {
-                    factoryOpen();
-                }}
-                >
-                <LargeCard
-                {...{ ...factoryCardProps, initalOpen: true }}
                 ></LargeCard>
                 </div>
             ) : null
@@ -309,6 +272,19 @@ export function ProjectSlider() {
 
 
         {/** Modal Popup Section */}
+        <Modal open={isCosmosOpen}>
+        <div
+        style={{ width: "fit-content" }}
+        onClick={() => {
+            cosmosClose();
+        }}
+        >
+        <LargeCard {...{ ...cosmosCardProps, initalOpen: false }}></LargeCard>
+        </div>
+        </Modal>
+
+
+
         <Modal open={isLambdaOpen}>
         <div
         style={{ width: "fit-content" }}
@@ -317,17 +293,6 @@ export function ProjectSlider() {
         }}
         >
         <LargeCard {...{ ...lambdaCardProps, initalOpen: false }}></LargeCard>
-        </div>
-        </Modal>
-
-        <Modal open={isCeliteOpen}>
-        <div
-        style={{ width: "fit-content" }}
-        onClick={() => {
-            celiteClose();
-        }}
-        >
-        <LargeCard {...{ ...celiteCardProps, initalOpen: false }}></LargeCard>
         </div>
         </Modal>
 
@@ -364,17 +329,6 @@ export function ProjectSlider() {
         </div>
         </Modal>
 
-
-        <Modal open={isFactoryOpen}>
-        <div
-        style={{ width: "fit-content" }}
-        onClick={() => {
-            factoryClose();
-        }}
-        >
-        <LargeCard {...{ ...factoryCardProps, initalOpen: false }}></LargeCard>
-        </div>
-        </Modal>
 
 
         </div>

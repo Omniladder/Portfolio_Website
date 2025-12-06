@@ -82,7 +82,7 @@ export function Experience() {
         className="vertical-timeline-element--work"
         contentStyle={{ background: "#a61c3c", color: "#d8d78f" }}
         contentArrowStyle={{ borderRight: "7px solid  #a61c3c" }}
-        date="January 2024 - Present"
+        date="January 2024 - May 2025"
         iconStyle={{ background: "#208aae", color: "#208aae" }}
         icon=<img
         src={WorkIcon}
@@ -189,7 +189,7 @@ export function Experience() {
         className="vertical-timeline-element--work"
         contentStyle={{ background: "#a61c3c", color: "#d8d78f" }}
         contentArrowStyle={{ borderRight: "7px solid  #a61c3c" }}
-        date="August 2024 - Present"
+        date="August 2024 - May 2025"
         iconStyle={{ background: "#208aae", color: "#208aae" }}
         icon=<img
         src={WorkIcon}
@@ -350,6 +350,31 @@ export function Experience() {
         infrastructure should look like.
         </p>
         </VerticalTimelineElement>
+        <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        contentStyle={{ background: "#a61c3c", color: "#d8d78f" }}
+        contentArrowStyle={{ borderRight: "7px solid  #a61c3c" }}
+        date="December 2025 - Present"
+        iconStyle={{ background: "#208aae", color: "#208aae" }}
+        icon=<img
+        src={WorkIcon}
+        style={{ width: "45px", marginTop: "3px" }}
+        className="XPLogo"
+        />
+        >
+        <h3 className="vertical-timeline-element-title">
+        Junior Cloud Engineer at Strategic Business Services
+                </h3>
+        <h4 className="vertical-timeline-element-subtitle">
+        Chantilly, VA
+        </h4>
+        <p>
+        Getting my first full time job at Strategic Business Services (SBS) as a Cloud Engineer.
+        Here I worked on the Navy's COSMOS project which allows for a fast approval for AWS gov.
+        Cloud while still meeting regulation. My job focuses on the Cloud Dev. Portion.
+        </p>
+        </VerticalTimelineElement>
+
         <VerticalTimelineElement
         className="vertical-timeline-element--work"
         iconStyle={{ background: "rgb(75, 201, 60)", color: "#208aae" }}

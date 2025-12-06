@@ -5,7 +5,7 @@ import ContactForm from "../../components/ContactForm/ContactForm.js"
 
 import dustin from "../../pics/Dustin2.jpg";
 
-import pythonLogo from "../../pics/pythonLogo.png";
+import typescriptLogo from "../../pics/typescriptLogo.png";
 import neovimLogo from "../../pics/neovimLogo.png";
 import awsLogo from "../../pics/awsLogo.png";
 import archLogo from "../../pics/archLogo.png";
@@ -30,21 +30,18 @@ export function About() {
         <div className="bioDiv">
         <div className="bioHead">Biography:</div>
         <p className="biographySection">
-        Hello, my name is Dustin O&apos;Brien, and I am a senior at
-        Salisbury University majoring in Computer Science and Data
-        Science. I have a deep passion for exploring and analyzing
-        subjects like mathematics, economics, chess, and history. In my
-        free time, I enjoy programming and diving into these interests.
-        Some of my pursuits include deriving the closed formula for the
-        Fibonacci sequence, reading about abstract algebra and real
-        analysis, and delving into historical topics such as U.S.
-        Presidents and the concept of critical elections and realignments
-        through books and articles. I also thrive on puzzles and
-        problem-solving, regularly challenging myself with Leetcode to
-        sharpen my skills. Additionally, I am committed to expanding my
-        technical expertise by experimenting with new technologies and
-        working on innovative projects, which you can explore in my
-        projects section.
+        Hello, my name is Dustin O&apos;Brien, and I am a junior Cloud Engineer 
+        at Strategic Business Services (SBS) where I work on the COSMOS system.
+        Outside of work I like code and have interests in learning more about
+        Kernels, Operating Systems, Graphics, Hardware and Artificial Intelligence.
+        I also am fond of non computational topics such as Economics, Chess, Puzzles, 
+        History, and Mathematics. As of now I have a Bachelor Degree from Salisbury
+        University with a Dual-major in Computer Science and Data Science with focuses
+        in Software Engineering and Artificial Intelligence. Some of my previous positions
+        include Math and Computer Science tutoring, Paid AI research investigating effects
+        of rising salinity levels, and basic System Adminstration work with my university.
+        My skillset is across stack including Software Engineering including Frontend, Backend,
+        Databases, DevOps and Infrastructure.
         </p>
         </div>
         <div className="picture-link-div">
@@ -58,7 +55,7 @@ export function About() {
         <div className="skillGrid">
         <img src={archLogo} className="skillDiv"></img>
         <img src={neovimLogo} className="skillDiv"></img>
-        <img src={pythonLogo} className="skillDiv"></img>
+        <img src={typescriptLogo} className="skillDiv"></img>
         <img src={reactLogo} className="skillDiv"></img>
         <img src={postgresLogo} className="skillDiv"></img>
         <img src={awsLogo} className="skillDiv"></img>

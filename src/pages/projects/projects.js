@@ -25,6 +25,7 @@ import { SmallCard } from "../../components/smallCard/smallCard.js";
 
     // These are the imports for images used in large project sliders
 import haskell from "../../pics/haskell.jpeg";
+import cosmos from "../../pics/cosmos.png";
 import chapp from "../../pics/chapp.png";
 import cellular from "../../pics/cells.png";
 import wants from "../../pics/clientWants.png";
@@ -109,6 +110,24 @@ export function Projects() {
 
         <center>
         <div className="projectGrid">
+
+        <SmallCard
+        title="COSMOS"
+        quote="A Zero Trust DoD Cloud Workflow"
+        image={cosmos}
+        background="COSMOS is a web app designed to allow for navyDoD developers to quickly create AWS Gov based projects. Rather than taking months going through bureaucracy COSMOS takes about 30 minutes and only requires DoD CAC cards too grant secure access to AWS Gov infrastructure. This allows for fast Cloud based R & D keeping governmental cloud resources up too date and utilizing the newest commerical Amazon technologies. My job focuses on working the main developers SBS on maintaining and upgrading these softwares too allow for better integration upgraded security testing, meeting regulatory requirements and more."
+        webLink="https://www.cosmos.navy.mil/"
+        tech1={awsLogo}
+        tech2={typescriptLogo}
+        tech3={nodeLogo}
+        tech4={postgresLogo}
+        tech5={reactLogo}
+        ></SmallCard>
+
+
+
+
+
         <SmallCard
         title="Chapp."
         quote="A Gamified Text Chat Website"
