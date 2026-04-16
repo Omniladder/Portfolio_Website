@@ -377,6 +377,36 @@ export function Experience() {
 
         <VerticalTimelineElement
         className="vertical-timeline-element--work"
+        contentStyle={{ background: "#a61c3c", color: "#d8d78f" }}
+        contentArrowStyle={{ borderRight: "7px solid  #a61c3c" }}
+        date="April 10th-12th 2026"
+        iconStyle={{ background: "#4b4e70", color: "#208aae" }}
+        icon=<img
+        src={hackLogo}
+        style={{ width: "45px", marginTop: "3px" }}
+        className="XPLogo"
+        />
+        >
+        <h3 className="vertical-timeline-element-title">
+        BitCamp Hackathon 2026
+        </h3>
+        <h4 className="vertical-timeline-element-subtitle">
+        College Park, MD
+        </h4>
+        <p>
+        Attended University of Maryland&apos;s BitCamp where our team built
+        Monolith IDE, an open-source, browser-based development environment
+        designed to fill the gap left by Replit&apos;s shift to paid services.
+        The platform provides students with isolated Docker containers running
+        VS Code in the browser, eliminating local setup requirements. The
+        project features Google OAuth authentication, multi-language support
+        for Python, Java, and C++, and automatic resource management through
+        WebSocket heartbeat monitoring.
+        </p>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+        className="vertical-timeline-element--work"
         iconStyle={{ background: "rgb(75, 201, 60)", color: "#208aae" }}
         icon=<img
         src={endIcon}

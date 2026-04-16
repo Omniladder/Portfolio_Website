@@ -39,19 +39,31 @@ import flashcardFactory from "../../pics/FlashcardFactory.jpg"
 import resumai from "../../pics/resumai.png";
 import sports from "../../pics/SportsClassfying.png";
 import reasoning from "../../pics/reasoning.jpg";
-import battleship from "../../pics/Battleship.png"
-import flashcardApp from "../../pics/Flashcard.png"
+import nixos from "../../pics/nixos.png"
+import arch from "../../pics/arch.png"
+import monolithIDE from "../../pics/monolithIDE.png"
 
 //Logo Imports
+import archLogo from "../../pics/archLogo.png";
+import linuxLogo from "../../pics/linuxLogo.svg";
+import kittyLogo from "../../pics/kittyLogo.png";
+import neovimLogo from "../../pics/neovimLogo.png";
+import gitLogo from "../../pics/gitLogo.png";
+import niriLogo from "../../pics/niriLogo.svg";
+import nixosLogo from "../../pics/nixosLogo.png";
+import tmuxLogo from "../../pics/tmuxLogo.png";
+import sqliteLogo from "../../pics/sqliteLogo.png";
+import dynamoDBLogo from "../../pics/DynamoDBLogo.png"
+import gitlabLogo from "../../pics/gitlabLogo.png"
+import hyprlandLogo from "../../pics/hyprlandLogo.png"
+import wizLogo from "../../pics/wizLogo.png"
 import haskellLogo from "../../pics/haskellLogo.png";
 import angularLogo from "../../pics/angularLogo.png";
-import nodeLogo from "../../pics/nodeLogo.png";
 import typescriptLogo from "../../pics/typescriptLogo.png";
 import postgresLogo from "../../pics/postgresLogo.png";
 import k8sLogo from "../../pics/kubernetes.png"
 import pythonLogo from "../../pics/pythonLogo.png";
 import fastAPILogo from "../../pics/fastapiLogo.svg";
-import sqlLogo from "../../pics/sqlLogo.png";
 import htmlLogo from "../../pics/HTMLLogo.png";
 import cssLogo from "../../pics/CSSLogo.png";
 import jsLogo from "../../pics/JSLogo.png";
@@ -77,13 +89,8 @@ import ollamaLogo from "../../pics/ollamaLogo.png"
 import huggingfaceLogo from "../../pics/huggingFaceLogo.svg"
 import rLogo from "../../pics/RLogo.png"
 import pytorchLogo from "../../pics/pytorchLogo.png"
-import javaLogo from "../../pics/javaLogo.svg"
-import swingLogo from "../../pics/swingLogo.png"
-import androidLogo from "../../pics/androidLogo.png"
-import androidStudioLogo from "../../pics/androidStudioLogo.png"
-import firebaseLogo from "../../pics/firebaseLogo.png"
-import figmaLogo from "../../pics/figmaLogo.png"
 import jenkinsLogo from "../../pics/jenkinsLogo.png"
+import redisLogo from "../../pics/redisLogo.png"
 
 export function Projects() {
     register();
@@ -113,34 +120,31 @@ export function Projects() {
 
         <SmallCard
         title="COSMOS"
-        quote="A Zero Trust DoD Cloud Workflow"
+        quote="An Automated ATO Cloud Environment"
         image={cosmos}
-        background="COSMOS is a web app designed to allow for navyDoD developers to quickly create AWS Gov based projects. Rather than taking months going through bureaucracy COSMOS takes about 30 minutes and only requires DoD CAC cards too grant secure access to AWS Gov infrastructure. This allows for fast Cloud based R & D keeping governmental cloud resources up too date and utilizing the newest commerical Amazon technologies. My job focuses on working the main developers SBS on maintaining and upgrading these softwares too allow for better integration upgraded security testing, meeting regulatory requirements and more."
+        background="COSMOS enables Navy and DoD developers to rapidly provision secure AWS GovCloud environments and achieve automated ATO, reducing months of compliance work into minutes. As part of an 8-person team, I work on ARR (Automated Readiness Review), aggregating security signals from GitLab, Wiz, and RegScale. I architected the DynamoDB integration, manage all cloud infrastructure through AWS CDK for true Infrastructure as Code, remediate security vulnerabilities, and contribute to GitLab CI/CD pipelines and the evaluation engine for mission-critical applications."
         webLink="https://www.cosmos.navy.mil/"
         tech1={awsLogo}
         tech2={typescriptLogo}
-        tech3={nodeLogo}
-        tech4={postgresLogo}
-        tech5={reactLogo}
+        tech3={reactLogo}
+        tech4={dynamoDBLogo}
+        tech5={gitlabLogo}
+        tech6={wizLogo}
         ></SmallCard>
-
-
-
-
 
         <SmallCard
         title="Chapp."
         quote="A Gamified Text Chat Website"
         image={chapp}
-        background="A gamified text chat Chapp is a full stack web application with a multitude of various technologies. Designed to be a flagship application Chapp is built in Typescript using Express.JS as its backend and Angular as its frontend. PostgreSQL is used as the Database Engine and is used to store users, conversations, relationships, and friends. The program is also designed to be easily deployable and eventually scalable with technologies like terraform and AWS for wide spread hosting."
+        background="A gamified text chat Chapp is a full stack web application with a multitude of various technologies. Designed to be a flagship application Chapp is built in Typescript using Express.JS as its backend and Angular as its frontend. PostgreSQL is used as the Database Engine and is used to store users, conversations, relationships, and friends. I architected a Kubernetes deployment strategy to enable horizontal scaling and high availability, with Redis integration for session management and caching. The application leverages Docker containerization and K8s orchestration for production-grade deployment, designed to scale across multiple nodes to handle increased user load efficiently."
         github="https://github.com/Omniladder/Chapp"
         webLink="https://chapp.dustintobrien.com"
         tech1={angularLogo}
-        tech2={nodeLogo}
-        tech3={typescriptLogo}
-        tech4={postgresLogo}
-        tech5={dockerLogo}
-        tech6={k8sLogo}
+        tech2={typescriptLogo}
+        tech3={postgresLogo}
+        tech4={dockerLogo}
+        tech5={k8sLogo}
+        tech6={redisLogo}
         ></SmallCard>
 
 
@@ -149,13 +153,13 @@ export function Projects() {
         title="Lambda Check"
         quote="A Haskell Vulnerability Detector"
         image={haskell}
-        background="Lambda Check is a Haskell security detection software featuring a CLI program and a database-oriented backend, designed to aggregate and manage security data from various large, popular databases into a unified backend. The CLI can parse Haskell configuration files to identify packages with known vulnerabilities stored in the database. Additionally, it analyzes Haskell code for common security issues, such as thread-unsafe interactions, race conditions, and other vulnerabilities. Developed in 24 hours for the University of Delaware’s HenHacks Hackathon in 2024, Lambda Check won Bank of America’s Best Financial Hack category."
+        background="Lambda Check is a Haskell security detection software featuring a CLI program and database backend that aggregates security data from multiple vulnerability databases. It parses Haskell configuration files to identify packages with known vulnerabilities and analyzes code for security issues like thread-unsafe interactions and race conditions. The project includes CI/CD pipelines using both Jenkins and GitHub Actions. Developed in 24 hours for the University of Delaware's HenHacks Hackathon in 2024, Lambda Check won Bank of America's Best Financial Hack category."
         github="https://github.com/jamesmontebell/lambda-check"
         webLink="https://devpost.com/software/lambda-check"
         tech1={haskellLogo}
         tech2={pythonLogo}
         tech3={fastAPILogo}
-        tech4={sqlLogo}
+        tech4={sqliteLogo}
         tech5={jenkinsLogo}
         tech6={dockerLogo}
         ></SmallCard>
@@ -164,7 +168,7 @@ export function Projects() {
         title="Testif.Ai"
         quote="A LLM Based Test Generator"
         image={testifAi}
-        background="Created for HackUMBC 2024 Testif.Ai is a test generation program built on the back of ChatGPT. The site works by setting up an API backend which sends users a form in regards to test structure and the content to generate the test off of. This information is parsed in the backend and data is sent to OpenAI to create questions and answers off of this information is then inputted into a Jinja template which sends its information back to the user in the form of a test. These tests are easily modifiable and downloadable with the answer key. This project won both UMBC’s Best Educational Hack Category alongside Second best Overall Hack."
+        background="Created for HackUMBC 2024 Testif.Ai is a test generation program built on the back of ChatGPT. The site works by setting up an API backend which sends users a form in regards to test structure and the content to generate the test off of. This information is parsed in the backend and data is sent to OpenAI to create questions and answers off of this information is then inputted into a Jinja template which sends its information back to the user in the form of a test. These tests are easily modifiable and downloadable with the answer key. This project won both UMBC's Best Educational Hack Category alongside Second best Overall Hack."
         github="https://github.com/SpencerPresley/UMBC-2024-Hackathon"
         webLink="https://devpost.com/software/testifai"
         tech1={pythonLogo}
@@ -175,6 +179,33 @@ export function Projects() {
         tech6={pydanticLogo}
         ></SmallCard>
 
+        <SmallCard
+        title="Arch Linux Setup"
+        quote="A Hyprland-Based Workflow"
+        image={arch}
+        background="My custom Arch Linux configuration featuring Hyprland as the primary Wayland compositor, creating a tiling window manager experience with smooth animations and modern aesthetics. This setup showcases a highly customized Linux desktop environment built from the ground up, featuring a complete development workflow with Neovim as the primary editor and Kitty as the terminal emulator. The configuration demonstrates proficiency in Linux system administration, Wayland protocols, and creating an efficient developer-focused workspace optimized for productivity and visual appeal."
+        tech1={archLogo}
+        tech2={hyprlandLogo}
+        tech3={gitLogo}
+        tech4={linuxLogo}
+        tech5={neovimLogo}
+        tech6={kittyLogo}
+        ></SmallCard>
+
+        <SmallCard
+        title="Monolith IDE"
+        quote="A Self-Hosted Web IDE Platform"
+        image={monolithIDE}
+        background="Built for BitCamp 2026, Monolith IDE is an open-source, browser-based development environment designed to fill the gap left by Replit's shift to paid services. The platform provides students with isolated Docker containers running VS Code in the browser, eliminating local setup requirements. Featuring Google OAuth authentication, multi-language support for Python, Java, and C++, and automatic resource management through WebSocket heartbeat monitoring, Monolith IDE enables educational institutions to self-host a complete coding environment on their own infrastructure."
+        github="https://github.com/Omniladder/Monolith_IDE"
+        webLink="https://monolithide.study/"
+        tech1={pythonLogo}
+        tech2={dockerLogo}
+        tech3={jsLogo}
+        tech4={fastAPILogo}
+        tech5={sqliteLogo}
+        tech6={jinjaLogo}
+        ></SmallCard>
 
         <SmallCard
         title="Celite"
@@ -248,6 +279,19 @@ export function Projects() {
         downloadFile="./downloads/chessbotPresentation.pdf"
         ></SmallCard>
 
+        <SmallCard
+        title="NixOS Configuration"
+        quote="A Declarative System Configuration"
+        image={nixos}
+        background="CatP is my personal NixOS configuration built with a modular flake-based architecture that declaratively manages my entire development environment. The configuration leverages Home Manager for reproducible user-level customization and features a comprehensive setup including the Niri window manager, a complete development toolchain with Neovim, Wezterm, Tmux, and Zsh. The modular design allows for easy system replication across multiple machines while maintaining consistency. Built with advanced systemd service integration for desktop utilities like swww and eww, the configuration showcases infrastructure-as-code principles applied to desktop Linux environments."
+        github="https://github.com/Omniladder/CatP-Dustin-NixOS-Config"
+        tech1={nixosLogo}
+        tech2={niriLogo}
+        tech3={neovimLogo}
+        tech4={gitLogo}
+        tech5={tmuxLogo}
+        tech6={linuxLogo}
+        ></SmallCard>
 
         <SmallCard
         title="Portfolio Website"
@@ -319,29 +363,6 @@ export function Projects() {
         tech6={pydanticLogo}
         github="https://github.com/Omniladder/COSC390_Benchmarking"
         downloadFile="./downloads/ToTPresentation.pdf"
-        ></SmallCard>
-
-        <SmallCard
-        title="Battleship"
-        quote="An Object Oriented Java Game"
-        image={battleship}
-        background="My Headstone Project of Object Oriented Programming Battleship is based on the famous Hasbro game of the same name where users play back and forth guessing ship locations to fire and once all ships are hit the game ends. The point of this project is to develop and learn Object Oriented Design Patterns and adjusting to a pure Object Oriented environment like Java. The game also utilizes a server for cross player communication allowing for two people to play the game across LAN."
-        tech1={javaLogo}
-        tech2={swingLogo}
-        github="https://github.com/Omniladder/Battleship"
-        ></SmallCard>
-
-        <SmallCard
-        title="Flashcard App"
-        quote="A Firebase based Android App"
-        image={flashcardApp}
-        background="The final project of Object Oriented Programming this project once again reiterates over different design patterns use in OOP. The project also focused on creating strong GUI as well as readable code using newly understood guidelines and doctrine. The app is a simple Flashcard Android App which uses Firebase as backend to store a large set of user created Flashcards the app has a totla of 4 screens a Opening Menu, Flashcard Creation Screen, Flashcard Usage Screen, and a Options Screen. Personal work focused on the creation of the first 3 pages XML frontends as well as integrating with my personal Firebase backend. I also worked on reorienting design according to professor wants as needed"
-        tech1={javaLogo}
-        tech2={androidLogo}
-        tech3={firebaseLogo}
-        tech4={figmaLogo}
-        tech5={androidStudioLogo}
-        github="https://github.com/ncorcoran771/FlashcardApp"
         ></SmallCard>
 
         <SmallCard

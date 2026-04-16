@@ -48,15 +48,13 @@ import pyqtLogo from "../../pics/pyqtLogo.png";
 
     const cosmosCardProps = {
         title: "COSMOS",
-        quote: "A Zero Trust DoD Cloud Workflow",
+        quote: "An Automated ATO Cloud Environment",
         image: cosmos,
-        background: "COSMOS is a web app designed to allow for navyDoD developers to quickly create AWS Gov based projects. Rather than taking months going through bureaucracy COSMOS takes about 30 minutes and only requires DoD CAC cards too grant secure access to AWS Gov infrastructure. This allows for fast Cloud based R & D keeping governmental cloud resources up too date and utilizing the newest commerical Amazon technologies. My job focuses on working the main developers SBS on maintaining and upgrading these softwares too allow for better integration upgraded security testing, meeting regulatory requirements and more.",
+        background: "COSMOS enables Navy and DoD developers to rapidly provision secure AWS GovCloud environments and achieve automated ATO, reducing months of compliance and infrastructure work into a CAC-authenticated workflow completed in minutes. My work focuses on ARR (Automated Readiness Review), which provides automated security governance and higher-level validation by aggregating signals from tools like GitLab, Wiz, and RegScale, normalizing them into audit-ready facts, and applying deterministic policy logic to produce clear, consistent readiness decisions. I contribute to integrations, ingestion pipelines, and the evaluation engine to help automate ATO and strengthen security for mission-critical cloud applications.",
         webLink: "https://www.cosmos.navy.mil/",
         tech1: awsLogo,
         tech2: typescriptLogo,
-        tech3: nodeLogo,
-        tech4: postgresLogo,
-        tech5: reactLogo
+        tech3: reactLogo
     }
 
 

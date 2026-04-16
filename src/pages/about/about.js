@@ -8,7 +8,7 @@ import dustin from "../../pics/Dustin2.jpg";
 import typescriptLogo from "../../pics/typescriptLogo.png";
 import neovimLogo from "../../pics/neovimLogo.png";
 import awsLogo from "../../pics/awsLogo.png";
-import archLogo from "../../pics/archLogo.png";
+import nixosLogo from "../../pics/nixosLogo.png";
 import postgresLogo from "../../pics/postgresLogo.png"
 import reactLogo from "../../pics/reactLogo.png";
 
@@ -53,7 +53,7 @@ export function About() {
         <div className="skillDiv">
         <div className="skillHead">Tech Stack:</div>
         <div className="skillGrid">
-        <img src={archLogo} className="skillDiv"></img>
+        <img src={nixosLogo} className="skillDiv"></img>
         <img src={neovimLogo} className="skillDiv"></img>
         <img src={typescriptLogo} className="skillDiv"></img>
         <img src={reactLogo} className="skillDiv"></img>
